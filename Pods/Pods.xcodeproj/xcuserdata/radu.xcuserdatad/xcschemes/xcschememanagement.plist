@@ -4,27 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>AutoCoding.xcscheme</key>
+		<key>Pods-UA Midi Control.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Focusrite Midi Control.xcscheme</key>
+		<key>Pods-UA Midi ControlTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Focusrite Midi ControlTests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-Focusrite Midi ControlUITests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>SWXMLHash.xcscheme</key>
+		<key>Pods-UA Midi ControlUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

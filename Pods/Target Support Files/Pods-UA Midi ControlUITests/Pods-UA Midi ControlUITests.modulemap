@@ -1,0 +1,6 @@
+framework module Pods_UA_Midi_ControlUITests {
+  umbrella header "Pods-UA Midi ControlUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

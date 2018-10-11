@@ -1,24 +1,16 @@
 PODS:
-  - AutoCoding (2.2.3)
   - SwiftSocket (2.0.2)
-  - SWXMLHash (4.0.0)
 
 DEPENDENCIES:
-  - AutoCoding (~> 2.2.3)
   - SwiftSocket (~> 2.0.2)
-  - SWXMLHash (~> 4.0.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - AutoCoding
     - SwiftSocket
-    - SWXMLHash
 
 SPEC CHECKSUMS:
-  AutoCoding: 90ca3cbc0d77a37cfff75167d705b44148c5fc51
   SwiftSocket: 6f4c9c63fbc5c1d61188936bb3c599fd546f40ae
-  SWXMLHash: 6bbc0bf72975a18ceda469fb7d6a886a26d81694
 
-PODFILE CHECKSUM: d87f5b28bafd7c2544978903575874141a19eb15
+PODFILE CHECKSUM: 4086a9b5550ccc07a38314ccd39fc040a263062a
 
 COCOAPODS: 1.5.3

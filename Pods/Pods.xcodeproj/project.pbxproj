@@ -7,217 +7,161 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		028636950F19EFADA3895774230DE965 /* Pods-Focusrite Midi ControlTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F70D321D54E7C7D209060E7B6AD9F97 /* Pods-Focusrite Midi ControlTests-dummy.m */; };
-		033208ABBDFFD8F4E8B112383C551B32 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */; };
-		160D90B2A0BCCE40CB7715E157488295 /* AutoCoding-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C1CAD14C1A68E61D8873C1980EBF1FAE /* AutoCoding-dummy.m */; };
-		1A0E794AE042B897D9C6C60A6A15FF1C /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3D9741C90B539B3B268CB0F6B1886B /* Result.swift */; };
-		26B84639A7F797739CB3189AA0DB9BBB /* Pods-Focusrite Midi Control-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F6524B21BE8D3147F0403DEBABF6BAC /* Pods-Focusrite Midi Control-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2803037F549A6F72E6BE6EF44326557E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */; };
-		37291C2EBB9A94FA3B4D7679DA3DDBF9 /* AutoCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 88915619B290C6A8380D4FA748D609FF /* AutoCoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3CEF1B0B8BACCBE432D450200EF0E656 /* UDPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51626241C8EDDF1110368155BB36482D /* UDPClient.swift */; };
-		3D2A5DB8778BEBF65354EF26F754E6FC /* SWXMLHash-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F6E6E48D5B7EE058490365C8E6307737 /* SWXMLHash-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		599365A5B8041F72CA6AC06EC274F5DD /* SWXMLHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC60D8EA71371D25BCA31F31F1BEAFB6 /* SWXMLHash.swift */; };
-		59F2F00974EF4182F37585CB3D84CE5F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */; };
-		6515664F7476456CDAE104EF4BBDF889 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8DDF7F4C6B8B204218C1A947310DD4 /* Socket.swift */; };
-		7122133E0F0BE6CA1111D704C3FA69EF /* Pods-Focusrite Midi ControlUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B23F62C6378027AB8D9B412B1BFE72D /* Pods-Focusrite Midi ControlUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		78570F35AC13C2F3B0D6138776A38C02 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */; };
-		7BD445AD1F0CFA7669B07A839FDD6529 /* SWXMLHash-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 521C98269130925DEB2274162E35E18B /* SWXMLHash-dummy.m */; };
-		7CF15F4E0C410DBB8908097B696298AC /* Pods-Focusrite Midi Control-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9866D432F55F8230F8D6054211CD22 /* Pods-Focusrite Midi Control-dummy.m */; };
-		88B33252718CBC5DF36AAEBB3677795C /* SwiftSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B3DD0DDE06971327F9E6EB746F3E1E3 /* SwiftSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9209F144A50F11D2D6941E11ACADF6C2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */; };
-		9E9E1DEE0F3AF74DA797DC2A7BE4E3A1 /* SWXMLHash+TypeConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EB61F729784BB026A1553C24DADDED /* SWXMLHash+TypeConversion.swift */; };
-		BB36088511842E2DF8B6CB07691CB2E4 /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 8AAE8ED5BEEA9F3D7E71FEA5C7709F1E /* ytcpsocket.c */; };
-		C2442146714C8652F9DA013B611B0FBF /* AutoCoding-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 550AD979FCDEBB1A64F2D8C6D0639FB1 /* AutoCoding-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CDD1AAE988C33CA7AE85572F29603BAD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */; };
-		DE50FC0CC49D91C87172302A7713539A /* AutoCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = BB427BFE731EA92FF233F91D0EE2D9F1 /* AutoCoding.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		E591C6F10B40CDFDBF67377E3AEB92BF /* Pods-Focusrite Midi ControlTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A752C889391B891021547E16DD34641 /* Pods-Focusrite Midi ControlTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EA38E0F73836BDB5A21AE94547B3BCE1 /* SwiftSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CED5688D018AE0887782E7E3B533B24 /* SwiftSocket-dummy.m */; };
-		EE78B26593879427AF2E7402E21C5EBB /* Pods-Focusrite Midi ControlUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0B3F6FCAA806612FF10F5B5BFB8688 /* Pods-Focusrite Midi ControlUITests-dummy.m */; };
-		F8F31795B26DEAF8B61C92F780F282F8 /* TCPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46D0EF4317FC1C909B13B52C15E1350 /* TCPClient.swift */; };
-		F8F8C6E810C7495FC6DCA45EA55DD0B2 /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 059D7149424B256F5F3C1910C1B32846 /* yudpsocket.c */; };
+		0920E5C6C07738CDF4940CD881C5941F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */; };
+		145FB296B651496232924166C78A41EB /* Pods-UA Midi Control-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C409E1A29ECBDE53A82CEAE7FD1B3D41 /* Pods-UA Midi Control-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2453EF45F736753475413CF55DB62033 /* Pods-UA Midi ControlUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02BD4C68AA0953B0D8A101DFD1ABD8B8 /* Pods-UA Midi ControlUITests-dummy.m */; };
+		26D902F8F349AE9A17F816C69695314A /* Pods-UA Midi ControlTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7ECD1AA6827322ECC18BAC604ACFFBD /* Pods-UA Midi ControlTests-dummy.m */; };
+		318E1DB16F9C9F6014AEFA153D3E9C07 /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 21E505997513D83AFD4626EECDFF20D1 /* ytcpsocket.c */; };
+		36D288163F4873B16F345BB3FCF6385B /* SwiftSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A3482A89ED856ED2B4645D3BF63D48C /* SwiftSocket-dummy.m */; };
+		3C3D22236372C11142555E68DA1D3C2B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */; };
+		52FB1624A4A8267C185509E2A6E080EA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */; };
+		646298595DC6C51998718A619B3D72F6 /* SwiftSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6F1113B6CB3FEBB75D760E6B096F87 /* SwiftSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66F8C0E6CCBD6C8005A9C289D0C9EBDB /* Pods-UA Midi Control-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6DD640646A83A952F1FA294D437C0 /* Pods-UA Midi Control-dummy.m */; };
+		6C30EA17E1D7CD8441F2CCDCAF88644A /* UDPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886AD7CDE1F5CC782474EF3443C2BA56 /* UDPClient.swift */; };
+		6D66A0AF8F8D0B6389ADFCF1B1A789BF /* TCPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C073B5E44A489A40FEBFC1148C40D1B5 /* TCPClient.swift */; };
+		755E27134BC462E7359612D079D5F442 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED4EEBEF28F2D922BF256FED95DA86C /* Result.swift */; };
+		95330DD40091DFF043C58D3CDF9EC077 /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 5752BCCE211EF17F51DD509637DDD333 /* yudpsocket.c */; };
+		9BFD6627ED3E96198B8D25CD08BBD9D3 /* Pods-UA Midi ControlUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 705C1239B142838740D7B68779585583 /* Pods-UA Midi ControlUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4506345B0F3CB944D72737475ADE322 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */; };
+		DB2AF64E9D5552B06065E972A297B8D2 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FF9585981F7B619C85C2C6E4DCF91 /* Socket.swift */; };
+		E962137DB6AAB0BC7F15F7B32F690F02 /* Pods-UA Midi ControlTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FC6D48F26007075AB4F2EC5E137E34 /* Pods-UA Midi ControlTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1FB4F5E5E69B2181C487339D7FA15D71 /* PBXContainerItemProxy */ = {
+		502BEB34C68EF6DAA4664D313A02432F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A9701DE261E8B2C1D3E4BA194384FB13;
-			remoteInfo = "Pods-Focusrite Midi Control";
-		};
-		3773E6890764F9C1D05C732C050630FB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A9701DE261E8B2C1D3E4BA194384FB13;
-			remoteInfo = "Pods-Focusrite Midi Control";
-		};
-		56B126A1A06FC68E7EBB9E6853660A8A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3773B8A39B0A52978381D8737FBF6430;
-			remoteInfo = AutoCoding;
-		};
-		BA11800AEB98D9DFD0D4226559F7E37C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 677A30BBEDD4DA633431C46D91780BB3;
-			remoteInfo = SWXMLHash;
-		};
-		C9ABC8FC5261B395576C6EE3DF235F5D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0B6898EE030EE6BDCE57C7E4EF771401;
+			remoteGlobalIDString = 81439A7FEDBE7A4379F79FCC9AC4311C;
 			remoteInfo = SwiftSocket;
+		};
+		70E71A388A63B07C64079A2B0EBEB636 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AC9ED34DE1956059FC0861D938022E9;
+			remoteInfo = "Pods-UA Midi Control";
+		};
+		7D016298A99DDAC1C28EAC7B911DA701 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AC9ED34DE1956059FC0861D938022E9;
+			remoteInfo = "Pods-UA Midi Control";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		059D7149424B256F5F3C1910C1B32846 /* yudpsocket.c */ = {isa = PBXFileReference; includeInIndex = 1; name = yudpsocket.c; path = Sources/yudpsocket.c; sourceTree = "<group>"; };
-		0B0B3F6FCAA806612FF10F5B5BFB8688 /* Pods-Focusrite Midi ControlUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Focusrite Midi ControlUITests-dummy.m"; sourceTree = "<group>"; };
-		0B2DC68C86E0AA280396F6AF0CF65F39 /* Pods-Focusrite Midi ControlUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Focusrite Midi ControlUITests-frameworks.sh"; sourceTree = "<group>"; };
-		0E4EEB427E8D861BC2F0D9CEBFC374B9 /* Pods-Focusrite Midi ControlTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Focusrite Midi ControlTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		139DB20F843D18FAB680EBD807DAB538 /* Pods-Focusrite Midi Control.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Focusrite Midi Control.debug.xcconfig"; sourceTree = "<group>"; };
-		15F16F2C39F51A664104BAAA8E42395F /* SwiftSocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSocket.xcconfig; sourceTree = "<group>"; };
-		1B0ED053485AE7C31676603501BD5E33 /* SwiftSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSocket-prefix.pch"; sourceTree = "<group>"; };
-		1B9866D432F55F8230F8D6054211CD22 /* Pods-Focusrite Midi Control-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Focusrite Midi Control-dummy.m"; sourceTree = "<group>"; };
-		1D3D9741C90B539B3B268CB0F6B1886B /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Sources/Result.swift; sourceTree = "<group>"; };
-		213EB7D40666560C582CA635AF500A05 /* Pods-Focusrite Midi ControlUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Focusrite Midi ControlUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		2746412082A865A63E9BBBF0DBF9BFD4 /* Pods-Focusrite Midi ControlUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Focusrite Midi ControlUITests.modulemap"; sourceTree = "<group>"; };
-		36F38FA67C99A0DEDF208B078063C13E /* Pods-Focusrite Midi ControlTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Focusrite Midi ControlTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3A752C889391B891021547E16DD34641 /* Pods-Focusrite Midi ControlTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Focusrite Midi ControlTests-umbrella.h"; sourceTree = "<group>"; };
-		3B23F62C6378027AB8D9B412B1BFE72D /* Pods-Focusrite Midi ControlUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Focusrite Midi ControlUITests-umbrella.h"; sourceTree = "<group>"; };
-		3B3DD0DDE06971327F9E6EB746F3E1E3 /* SwiftSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSocket-umbrella.h"; sourceTree = "<group>"; };
-		3F70D321D54E7C7D209060E7B6AD9F97 /* Pods-Focusrite Midi ControlTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Focusrite Midi ControlTests-dummy.m"; sourceTree = "<group>"; };
-		40F404187F4C75C43922838937DBDC06 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		49D9FCCD4473E6BE22C816E49D6A4069 /* AutoCoding-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AutoCoding-prefix.pch"; sourceTree = "<group>"; };
-		4D1DC03FB0F1ABDCF8FFCDE35CFB4359 /* AutoCoding.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AutoCoding.xcconfig; sourceTree = "<group>"; };
-		51626241C8EDDF1110368155BB36482D /* UDPClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UDPClient.swift; path = Sources/UDPClient.swift; sourceTree = "<group>"; };
-		521C98269130925DEB2274162E35E18B /* SWXMLHash-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SWXMLHash-dummy.m"; sourceTree = "<group>"; };
-		53EB61F729784BB026A1553C24DADDED /* SWXMLHash+TypeConversion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SWXMLHash+TypeConversion.swift"; path = "Source/SWXMLHash+TypeConversion.swift"; sourceTree = "<group>"; };
-		550AD979FCDEBB1A64F2D8C6D0639FB1 /* AutoCoding-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AutoCoding-umbrella.h"; sourceTree = "<group>"; };
-		57BAB829C3159726132A82D0323378BF /* Pods-Focusrite Midi Control-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Focusrite Midi Control-resources.sh"; sourceTree = "<group>"; };
-		5B74F4DF2121043E2E329B949E7940DE /* Pods-Focusrite Midi ControlUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Focusrite Midi ControlUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5E4CFD2FF7FE187BBCE1454F303B024D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6327BAAA845B5C189F4D9386E2513231 /* Pods-Focusrite Midi Control.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Focusrite Midi Control.release.xcconfig"; sourceTree = "<group>"; };
-		68F8B2E5765796841C88D842040797C9 /* Pods-Focusrite Midi ControlTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Focusrite Midi ControlTests.release.xcconfig"; sourceTree = "<group>"; };
-		6B00AE97B75CFBCD5CA67D843E1601A6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		79FCDD94CEB33C9C4FA28A1303B958FB /* Pods-Focusrite Midi Control.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Focusrite Midi Control.modulemap"; sourceTree = "<group>"; };
-		7F6524B21BE8D3147F0403DEBABF6BAC /* Pods-Focusrite Midi Control-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Focusrite Midi Control-umbrella.h"; sourceTree = "<group>"; };
-		88915619B290C6A8380D4FA748D609FF /* AutoCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AutoCoding.h; path = AutoCoding/AutoCoding.h; sourceTree = "<group>"; };
-		8AAE8ED5BEEA9F3D7E71FEA5C7709F1E /* ytcpsocket.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ytcpsocket.c; path = Sources/ytcpsocket.c; sourceTree = "<group>"; };
-		8D51BCD674D3833CAC8F9C6D863EA2C2 /* Pods-Focusrite Midi ControlTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Focusrite Midi ControlTests.modulemap"; sourceTree = "<group>"; };
-		8FA23CA69C7BC1E91ADB2B7EF9791CFC /* AutoCoding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AutoCoding.framework; path = AutoCoding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		90C7CAC7684FE3DD1843DBD6F5DBC07B /* Pods-Focusrite Midi ControlUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Focusrite Midi ControlUITests.release.xcconfig"; sourceTree = "<group>"; };
-		91DFF614B98C0124307D315288FE5C75 /* AutoCoding.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AutoCoding.modulemap; sourceTree = "<group>"; };
-		92313D513A9DEA310A2691DF4930E2CE /* Pods-Focusrite Midi Control-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Focusrite Midi Control-acknowledgements.markdown"; sourceTree = "<group>"; };
+		02BD4C68AA0953B0D8A101DFD1ABD8B8 /* Pods-UA Midi ControlUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UA Midi ControlUITests-dummy.m"; sourceTree = "<group>"; };
+		05FC6D48F26007075AB4F2EC5E137E34 /* Pods-UA Midi ControlTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UA Midi ControlTests-umbrella.h"; sourceTree = "<group>"; };
+		1A3482A89ED856ED2B4645D3BF63D48C /* SwiftSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSocket-dummy.m"; sourceTree = "<group>"; };
+		21E505997513D83AFD4626EECDFF20D1 /* ytcpsocket.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ytcpsocket.c; path = Sources/ytcpsocket.c; sourceTree = "<group>"; };
+		2E755E372224FE54BF35609667B715B7 /* SwiftSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftSocket.modulemap; sourceTree = "<group>"; };
+		300F1D39C2B06A81C1677CE9994DBDE5 /* Pods-UA Midi ControlTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-UA Midi ControlTests.modulemap"; sourceTree = "<group>"; };
+		3DC807616AEE17EF0B06D0A7CA2CBFF9 /* Pods-UA Midi Control-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UA Midi Control-acknowledgements.plist"; sourceTree = "<group>"; };
+		41ABC195FB77C6F55172860F6116DC66 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44C277FEBD4445FD32195982BF3D6510 /* SwiftSocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSocket.xcconfig; sourceTree = "<group>"; };
+		466453C49EC77D6F39C803B458ED7DEC /* Pods-UA Midi ControlTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UA Midi ControlTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4B17840D1EDCCDEC2FFA3A0E9BD4BAE6 /* Pods-UA Midi Control.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-UA Midi Control.modulemap"; sourceTree = "<group>"; };
+		4E67983FB3DD348BD0AA415A0367A644 /* Pods-UA Midi Control.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UA Midi Control.release.xcconfig"; sourceTree = "<group>"; };
+		4FEE35B7240CBEABF9BF7A97EF15A113 /* Pods-UA Midi ControlTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UA Midi ControlTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5752BCCE211EF17F51DD509637DDD333 /* yudpsocket.c */ = {isa = PBXFileReference; includeInIndex = 1; name = yudpsocket.c; path = Sources/yudpsocket.c; sourceTree = "<group>"; };
+		5A281E3047C72C36D39419BC380D1F1F /* Pods_UA_Midi_ControlTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_UA_Midi_ControlTests.framework; path = "Pods-UA Midi ControlTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AF500CFCCE54B12329C6D29554A5889 /* Pods-UA Midi ControlUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UA Midi ControlUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		682B1A5B671EE4B3CC2D7C477F7B0684 /* Pods-UA Midi ControlTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UA Midi ControlTests.release.xcconfig"; sourceTree = "<group>"; };
+		693E05B12CDB02C63E947A3EE6537569 /* Pods-UA Midi ControlUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UA Midi ControlUITests-frameworks.sh"; sourceTree = "<group>"; };
+		6ADE523A24A6F5F978F5B7D85581A12D /* Pods-UA Midi Control-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UA Midi Control-acknowledgements.markdown"; sourceTree = "<group>"; };
+		705C1239B142838740D7B68779585583 /* Pods-UA Midi ControlUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UA Midi ControlUITests-umbrella.h"; sourceTree = "<group>"; };
+		74BA5508CDE8A423EF2AFD74778EDFE6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D712395723CC96FA547C84F5AFDB174 /* Pods-UA Midi ControlUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UA Midi ControlUITests-resources.sh"; sourceTree = "<group>"; };
+		870C978D1C12539EF1AA9AED337ACE17 /* Pods-UA Midi ControlTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UA Midi ControlTests-resources.sh"; sourceTree = "<group>"; };
+		886AD7CDE1F5CC782474EF3443C2BA56 /* UDPClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UDPClient.swift; path = Sources/UDPClient.swift; sourceTree = "<group>"; };
+		8A9A27C833A0D22DCDFF5FE3CB44E25D /* SwiftSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSocket-prefix.pch"; sourceTree = "<group>"; };
+		8DB39FA9033E6C7139C6CBB809580566 /* SwiftSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftSocket.framework; path = SwiftSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		948D6573BB650CEDF0E2EE9B27DE91CF /* Pods-Focusrite Midi ControlTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Focusrite Midi ControlTests.debug.xcconfig"; sourceTree = "<group>"; };
-		95CB519FCA771F27C06270518F211924 /* Pods_Focusrite_Midi_ControlUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Focusrite_Midi_ControlUITests.framework; path = "Pods-Focusrite Midi ControlUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CED5688D018AE0887782E7E3B533B24 /* SwiftSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSocket-dummy.m"; sourceTree = "<group>"; };
-		9D8DDF7F4C6B8B204218C1A947310DD4 /* Socket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Socket.swift; path = Sources/Socket.swift; sourceTree = "<group>"; };
-		A46D0EF4317FC1C909B13B52C15E1350 /* TCPClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TCPClient.swift; path = Sources/TCPClient.swift; sourceTree = "<group>"; };
-		A61C362543F3EF0321685AAD69AA3867 /* Pods-Focusrite Midi Control-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Focusrite Midi Control-acknowledgements.plist"; sourceTree = "<group>"; };
-		AE694E27101420CB4814BF27BAB7509C /* Pods_Focusrite_Midi_ControlTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Focusrite_Midi_ControlTests.framework; path = "Pods-Focusrite Midi ControlTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF55A15A994240BCD93959A4F63499FF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B025A0B23BAAA847BCA640492F9C944A /* Pods-Focusrite Midi ControlUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Focusrite Midi ControlUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		B2E3844EFA5C2A5CEA3BBAB858C42DE2 /* SWXMLHash-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWXMLHash-prefix.pch"; sourceTree = "<group>"; };
-		B3832C1F3832F82C07191DADC6CB547C /* Pods-Focusrite Midi ControlTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Focusrite Midi ControlTests-frameworks.sh"; sourceTree = "<group>"; };
-		B6902471D7CBB261BA5E4CED92CD7F8C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B7F885238854D65DBEBCFEE3FD4EA9E8 /* Pods-Focusrite Midi ControlTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Focusrite Midi ControlTests-resources.sh"; sourceTree = "<group>"; };
-		BB427BFE731EA92FF233F91D0EE2D9F1 /* AutoCoding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AutoCoding.m; path = AutoCoding/AutoCoding.m; sourceTree = "<group>"; };
-		C1CAD14C1A68E61D8873C1980EBF1FAE /* AutoCoding-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AutoCoding-dummy.m"; sourceTree = "<group>"; };
-		C27D221EA958EB811B5BDE4226E7F994 /* SWXMLHash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SWXMLHash.framework; path = SWXMLHash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CDA5F128EAE51F1A4437B2037FB8D4AF /* SwiftSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftSocket.framework; path = SwiftSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE293651DE1DABA5AAE596F73C0C166E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93DE5F689CD3B92FAF083669006378A1 /* Pods-UA Midi ControlUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UA Midi ControlUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		94A6DD640646A83A952F1FA294D437C0 /* Pods-UA Midi Control-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UA Midi Control-dummy.m"; sourceTree = "<group>"; };
+		9941CC07386827B6B4E08DBB3929412C /* Pods_UA_Midi_Control.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_UA_Midi_Control.framework; path = "Pods-UA Midi Control.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ED4EEBEF28F2D922BF256FED95DA86C /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Sources/Result.swift; sourceTree = "<group>"; };
+		A180A0B858BB5771B3A794EFC1C1679E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A514C4D1F84720ECBEC758D92CD27807 /* Pods-UA Midi Control-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UA Midi Control-resources.sh"; sourceTree = "<group>"; };
+		AA6F1113B6CB3FEBB75D760E6B096F87 /* SwiftSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSocket-umbrella.h"; sourceTree = "<group>"; };
+		ACABE2B90F774C14C72F0B04814A428C /* Pods-UA Midi ControlUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UA Midi ControlUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B1BC9FE94B49AA6B526E3542A40B41F9 /* Pods-UA Midi Control.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UA Midi Control.debug.xcconfig"; sourceTree = "<group>"; };
+		C073B5E44A489A40FEBFC1148C40D1B5 /* TCPClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TCPClient.swift; path = Sources/TCPClient.swift; sourceTree = "<group>"; };
+		C409E1A29ECBDE53A82CEAE7FD1B3D41 /* Pods-UA Midi Control-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UA Midi Control-umbrella.h"; sourceTree = "<group>"; };
+		CAF3867E9B7A5AFCD10A40F89B512407 /* Pods-UA Midi ControlUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-UA Midi ControlUITests.modulemap"; sourceTree = "<group>"; };
+		CC5AD11F251D9324A3FC80B4D286AD7E /* Pods_UA_Midi_ControlUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_UA_Midi_ControlUITests.framework; path = "Pods-UA Midi ControlUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D26D786E5264144A515582CB653310BC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D674AB0AAD95216DCBD224169778FF37 /* Pods-UA Midi ControlUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UA Midi ControlUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DD7FF9585981F7B619C85C2C6E4DCF91 /* Socket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Socket.swift; path = Sources/Socket.swift; sourceTree = "<group>"; };
 		DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		E0FCF6FC7FFD1B6811F1016410B69FFA /* Pods-Focusrite Midi Control-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Focusrite Midi Control-frameworks.sh"; sourceTree = "<group>"; };
-		F17C74C1FC06BC5B2BE6A579A3E9DB1A /* Pods-Focusrite Midi ControlUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Focusrite Midi ControlUITests-resources.sh"; sourceTree = "<group>"; };
-		F6E6E48D5B7EE058490365C8E6307737 /* SWXMLHash-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWXMLHash-umbrella.h"; sourceTree = "<group>"; };
-		F8060D35FD2128D77BF76800F7C47F7D /* SWXMLHash.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SWXMLHash.xcconfig; sourceTree = "<group>"; };
-		F8CF2545054A6B7DAF22CB34DFDDE92D /* SwiftSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftSocket.modulemap; sourceTree = "<group>"; };
-		F95B22F086106A84D96AA3DBE7FC5259 /* Pods_Focusrite_Midi_Control.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Focusrite_Midi_Control.framework; path = "Pods-Focusrite Midi Control.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F9E6E75F21680D2C0E287A2DB77C6F10 /* SWXMLHash.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SWXMLHash.modulemap; sourceTree = "<group>"; };
-		FC60D8EA71371D25BCA31F31F1BEAFB6 /* SWXMLHash.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SWXMLHash.swift; path = Source/SWXMLHash.swift; sourceTree = "<group>"; };
+		E7ECD1AA6827322ECC18BAC604ACFFBD /* Pods-UA Midi ControlTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UA Midi ControlTests-dummy.m"; sourceTree = "<group>"; };
+		E81180237CF1E34AB0EE8E894667D103 /* Pods-UA Midi ControlTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UA Midi ControlTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F31A21B55A856D5D732E53F1BF5611E3 /* Pods-UA Midi Control-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UA Midi Control-frameworks.sh"; sourceTree = "<group>"; };
+		F8CCCB1C00098EFE73613C1E1D4824CF /* Pods-UA Midi ControlTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UA Midi ControlTests-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		47B9657E6D90B9CE764B34CD5837E52F /* Frameworks */ = {
+		08D335F692E66F805B958638DEA90CB3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2803037F549A6F72E6BE6EF44326557E /* Cocoa.framework in Frameworks */,
+				3C3D22236372C11142555E68DA1D3C2B /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		71C879BAEBC31CBB846EAAB18F66AD1E /* Frameworks */ = {
+		0A41B3A25A3204D1B6F88FEDB4A37700 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78570F35AC13C2F3B0D6138776A38C02 /* Cocoa.framework in Frameworks */,
+				B4506345B0F3CB944D72737475ADE322 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7A79E13CFEDE9CF765657020B2115EAC /* Frameworks */ = {
+		272BA81D92329EB3CC954D0B0ECFAACB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				033208ABBDFFD8F4E8B112383C551B32 /* Cocoa.framework in Frameworks */,
+				52FB1624A4A8267C185509E2A6E080EA /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BD87B48ADCBB74A308173293BE7CF401 /* Frameworks */ = {
+		5BC02976C67577EB6EAF30F02B02F0D7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDD1AAE988C33CA7AE85572F29603BAD /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BEFFCA0464CDBCD21BB325F8A536556D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				59F2F00974EF4182F37585CB3D84CE5F /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CAAFF17705954C9EC02307BC3625E39E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9209F144A50F11D2D6941E11ACADF6C2 /* Cocoa.framework in Frameworks */,
+				0920E5C6C07738CDF4940CD881C5941F /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		043BF1C0F1CFF58029656E71FBA09FD5 /* Targets Support Files */ = {
+		04F81F21E9B2EFE1074777E2D2759FF9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CEE360D087385FE454C9A1AF406BF59A /* Pods-Focusrite Midi Control */,
-				518C00BF7415224B54C88AAEBDB7EC4D /* Pods-Focusrite Midi ControlTests */,
-				875160759EC9215290D748C8EB4DEE54 /* Pods-Focusrite Midi ControlUITests */,
+				A44A66ADA1344DA9E7A74277DE6C0CE1 /* SwiftSocket */,
 			);
-			name = "Targets Support Files";
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		396AA925BCAADAA271EFA042BB3B5B3F /* Support Files */ = {
+		1618A966D3528E3608C94C2F90B62CEF /* Pods-UA Midi ControlTests */ = {
 			isa = PBXGroup;
 			children = (
-				6B00AE97B75CFBCD5CA67D843E1601A6 /* Info.plist */,
-				F9E6E75F21680D2C0E287A2DB77C6F10 /* SWXMLHash.modulemap */,
-				F8060D35FD2128D77BF76800F7C47F7D /* SWXMLHash.xcconfig */,
-				521C98269130925DEB2274162E35E18B /* SWXMLHash-dummy.m */,
-				B2E3844EFA5C2A5CEA3BBAB858C42DE2 /* SWXMLHash-prefix.pch */,
-				F6E6E48D5B7EE058490365C8E6307737 /* SWXMLHash-umbrella.h */,
+				A180A0B858BB5771B3A794EFC1C1679E /* Info.plist */,
+				300F1D39C2B06A81C1677CE9994DBDE5 /* Pods-UA Midi ControlTests.modulemap */,
+				E81180237CF1E34AB0EE8E894667D103 /* Pods-UA Midi ControlTests-acknowledgements.markdown */,
+				4FEE35B7240CBEABF9BF7A97EF15A113 /* Pods-UA Midi ControlTests-acknowledgements.plist */,
+				E7ECD1AA6827322ECC18BAC604ACFFBD /* Pods-UA Midi ControlTests-dummy.m */,
+				F8CCCB1C00098EFE73613C1E1D4824CF /* Pods-UA Midi ControlTests-frameworks.sh */,
+				870C978D1C12539EF1AA9AED337ACE17 /* Pods-UA Midi ControlTests-resources.sh */,
+				05FC6D48F26007075AB4F2EC5E137E34 /* Pods-UA Midi ControlTests-umbrella.h */,
+				466453C49EC77D6F39C803B458ED7DEC /* Pods-UA Midi ControlTests.debug.xcconfig */,
+				682B1A5B671EE4B3CC2D7C477F7B0684 /* Pods-UA Midi ControlTests.release.xcconfig */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SWXMLHash";
+			name = "Pods-UA Midi ControlTests";
+			path = "Target Support Files/Pods-UA Midi ControlTests";
 			sourceTree = "<group>";
 		};
 		39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */ = {
@@ -228,59 +172,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4255876CC3258660F546E1D7B3F45ADA /* AutoCoding */ = {
+		49FEA45E4D854B45F80A49C310A8E904 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				88915619B290C6A8380D4FA748D609FF /* AutoCoding.h */,
-				BB427BFE731EA92FF233F91D0EE2D9F1 /* AutoCoding.m */,
-				C85786BE2DA51A34A378ECA2C83E50E3 /* Support Files */,
+				ED6216C239FF1DC283D0BBEB3246A0FE /* Pods-UA Midi Control */,
+				1618A966D3528E3608C94C2F90B62CEF /* Pods-UA Midi ControlTests */,
+				F3EE92B3E1036BE39FE5B6F5C90F3CB4 /* Pods-UA Midi ControlUITests */,
 			);
-			name = AutoCoding;
-			path = AutoCoding;
-			sourceTree = "<group>";
-		};
-		518C00BF7415224B54C88AAEBDB7EC4D /* Pods-Focusrite Midi ControlTests */ = {
-			isa = PBXGroup;
-			children = (
-				CE293651DE1DABA5AAE596F73C0C166E /* Info.plist */,
-				8D51BCD674D3833CAC8F9C6D863EA2C2 /* Pods-Focusrite Midi ControlTests.modulemap */,
-				36F38FA67C99A0DEDF208B078063C13E /* Pods-Focusrite Midi ControlTests-acknowledgements.markdown */,
-				0E4EEB427E8D861BC2F0D9CEBFC374B9 /* Pods-Focusrite Midi ControlTests-acknowledgements.plist */,
-				3F70D321D54E7C7D209060E7B6AD9F97 /* Pods-Focusrite Midi ControlTests-dummy.m */,
-				B3832C1F3832F82C07191DADC6CB547C /* Pods-Focusrite Midi ControlTests-frameworks.sh */,
-				B7F885238854D65DBEBCFEE3FD4EA9E8 /* Pods-Focusrite Midi ControlTests-resources.sh */,
-				3A752C889391B891021547E16DD34641 /* Pods-Focusrite Midi ControlTests-umbrella.h */,
-				948D6573BB650CEDF0E2EE9B27DE91CF /* Pods-Focusrite Midi ControlTests.debug.xcconfig */,
-				68F8B2E5765796841C88D842040797C9 /* Pods-Focusrite Midi ControlTests.release.xcconfig */,
-			);
-			name = "Pods-Focusrite Midi ControlTests";
-			path = "Target Support Files/Pods-Focusrite Midi ControlTests";
-			sourceTree = "<group>";
-		};
-		7589C20DF5E30B38278994F80597CDE2 /* SwiftSocket */ = {
-			isa = PBXGroup;
-			children = (
-				1D3D9741C90B539B3B268CB0F6B1886B /* Result.swift */,
-				9D8DDF7F4C6B8B204218C1A947310DD4 /* Socket.swift */,
-				A46D0EF4317FC1C909B13B52C15E1350 /* TCPClient.swift */,
-				51626241C8EDDF1110368155BB36482D /* UDPClient.swift */,
-				8AAE8ED5BEEA9F3D7E71FEA5C7709F1E /* ytcpsocket.c */,
-				059D7149424B256F5F3C1910C1B32846 /* yudpsocket.c */,
-				EA4F82E6E68355A192C4EC52D6B9E0EB /* Support Files */,
-			);
-			name = SwiftSocket;
-			path = SwiftSocket;
-			sourceTree = "<group>";
-		};
-		79BA70D17BF52A2E22128DF0FD5E3B71 /* SWXMLHash */ = {
-			isa = PBXGroup;
-			children = (
-				FC60D8EA71371D25BCA31F31F1BEAFB6 /* SWXMLHash.swift */,
-				53EB61F729784BB026A1553C24DADDED /* SWXMLHash+TypeConversion.swift */,
-				396AA925BCAADAA271EFA042BB3B5B3F /* Support Files */,
-			);
-			name = SWXMLHash;
-			path = SWXMLHash;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -288,97 +187,72 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */,
-				E9772171C7E3D3D55329774F18C6967F /* Pods */,
-				F43CAC3B5AE37358E12CF106A46BCEDD /* Products */,
-				043BF1C0F1CFF58029656E71FBA09FD5 /* Targets Support Files */,
+				04F81F21E9B2EFE1074777E2D2759FF9 /* Pods */,
+				8BD6B01135360AFDAAFCA56843ADDFF3 /* Products */,
+				49FEA45E4D854B45F80A49C310A8E904 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		875160759EC9215290D748C8EB4DEE54 /* Pods-Focusrite Midi ControlUITests */ = {
+		8BD6B01135360AFDAAFCA56843ADDFF3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				40F404187F4C75C43922838937DBDC06 /* Info.plist */,
-				2746412082A865A63E9BBBF0DBF9BFD4 /* Pods-Focusrite Midi ControlUITests.modulemap */,
-				5B74F4DF2121043E2E329B949E7940DE /* Pods-Focusrite Midi ControlUITests-acknowledgements.markdown */,
-				213EB7D40666560C582CA635AF500A05 /* Pods-Focusrite Midi ControlUITests-acknowledgements.plist */,
-				0B0B3F6FCAA806612FF10F5B5BFB8688 /* Pods-Focusrite Midi ControlUITests-dummy.m */,
-				0B2DC68C86E0AA280396F6AF0CF65F39 /* Pods-Focusrite Midi ControlUITests-frameworks.sh */,
-				F17C74C1FC06BC5B2BE6A579A3E9DB1A /* Pods-Focusrite Midi ControlUITests-resources.sh */,
-				3B23F62C6378027AB8D9B412B1BFE72D /* Pods-Focusrite Midi ControlUITests-umbrella.h */,
-				B025A0B23BAAA847BCA640492F9C944A /* Pods-Focusrite Midi ControlUITests.debug.xcconfig */,
-				90C7CAC7684FE3DD1843DBD6F5DBC07B /* Pods-Focusrite Midi ControlUITests.release.xcconfig */,
-			);
-			name = "Pods-Focusrite Midi ControlUITests";
-			path = "Target Support Files/Pods-Focusrite Midi ControlUITests";
-			sourceTree = "<group>";
-		};
-		C85786BE2DA51A34A378ECA2C83E50E3 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				91DFF614B98C0124307D315288FE5C75 /* AutoCoding.modulemap */,
-				4D1DC03FB0F1ABDCF8FFCDE35CFB4359 /* AutoCoding.xcconfig */,
-				C1CAD14C1A68E61D8873C1980EBF1FAE /* AutoCoding-dummy.m */,
-				49D9FCCD4473E6BE22C816E49D6A4069 /* AutoCoding-prefix.pch */,
-				550AD979FCDEBB1A64F2D8C6D0639FB1 /* AutoCoding-umbrella.h */,
-				AF55A15A994240BCD93959A4F63499FF /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/AutoCoding";
-			sourceTree = "<group>";
-		};
-		CEE360D087385FE454C9A1AF406BF59A /* Pods-Focusrite Midi Control */ = {
-			isa = PBXGroup;
-			children = (
-				5E4CFD2FF7FE187BBCE1454F303B024D /* Info.plist */,
-				79FCDD94CEB33C9C4FA28A1303B958FB /* Pods-Focusrite Midi Control.modulemap */,
-				92313D513A9DEA310A2691DF4930E2CE /* Pods-Focusrite Midi Control-acknowledgements.markdown */,
-				A61C362543F3EF0321685AAD69AA3867 /* Pods-Focusrite Midi Control-acknowledgements.plist */,
-				1B9866D432F55F8230F8D6054211CD22 /* Pods-Focusrite Midi Control-dummy.m */,
-				E0FCF6FC7FFD1B6811F1016410B69FFA /* Pods-Focusrite Midi Control-frameworks.sh */,
-				57BAB829C3159726132A82D0323378BF /* Pods-Focusrite Midi Control-resources.sh */,
-				7F6524B21BE8D3147F0403DEBABF6BAC /* Pods-Focusrite Midi Control-umbrella.h */,
-				139DB20F843D18FAB680EBD807DAB538 /* Pods-Focusrite Midi Control.debug.xcconfig */,
-				6327BAAA845B5C189F4D9386E2513231 /* Pods-Focusrite Midi Control.release.xcconfig */,
-			);
-			name = "Pods-Focusrite Midi Control";
-			path = "Target Support Files/Pods-Focusrite Midi Control";
-			sourceTree = "<group>";
-		};
-		E9772171C7E3D3D55329774F18C6967F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4255876CC3258660F546E1D7B3F45ADA /* AutoCoding */,
-				7589C20DF5E30B38278994F80597CDE2 /* SwiftSocket */,
-				79BA70D17BF52A2E22128DF0FD5E3B71 /* SWXMLHash */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		EA4F82E6E68355A192C4EC52D6B9E0EB /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B6902471D7CBB261BA5E4CED92CD7F8C /* Info.plist */,
-				F8CF2545054A6B7DAF22CB34DFDDE92D /* SwiftSocket.modulemap */,
-				15F16F2C39F51A664104BAAA8E42395F /* SwiftSocket.xcconfig */,
-				9CED5688D018AE0887782E7E3B533B24 /* SwiftSocket-dummy.m */,
-				1B0ED053485AE7C31676603501BD5E33 /* SwiftSocket-prefix.pch */,
-				3B3DD0DDE06971327F9E6EB746F3E1E3 /* SwiftSocket-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftSocket";
-			sourceTree = "<group>";
-		};
-		F43CAC3B5AE37358E12CF106A46BCEDD /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8FA23CA69C7BC1E91ADB2B7EF9791CFC /* AutoCoding.framework */,
-				F95B22F086106A84D96AA3DBE7FC5259 /* Pods_Focusrite_Midi_Control.framework */,
-				AE694E27101420CB4814BF27BAB7509C /* Pods_Focusrite_Midi_ControlTests.framework */,
-				95CB519FCA771F27C06270518F211924 /* Pods_Focusrite_Midi_ControlUITests.framework */,
-				CDA5F128EAE51F1A4437B2037FB8D4AF /* SwiftSocket.framework */,
-				C27D221EA958EB811B5BDE4226E7F994 /* SWXMLHash.framework */,
+				9941CC07386827B6B4E08DBB3929412C /* Pods_UA_Midi_Control.framework */,
+				5A281E3047C72C36D39419BC380D1F1F /* Pods_UA_Midi_ControlTests.framework */,
+				CC5AD11F251D9324A3FC80B4D286AD7E /* Pods_UA_Midi_ControlUITests.framework */,
+				8DB39FA9033E6C7139C6CBB809580566 /* SwiftSocket.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A44A66ADA1344DA9E7A74277DE6C0CE1 /* SwiftSocket */ = {
+			isa = PBXGroup;
+			children = (
+				9ED4EEBEF28F2D922BF256FED95DA86C /* Result.swift */,
+				DD7FF9585981F7B619C85C2C6E4DCF91 /* Socket.swift */,
+				C073B5E44A489A40FEBFC1148C40D1B5 /* TCPClient.swift */,
+				886AD7CDE1F5CC782474EF3443C2BA56 /* UDPClient.swift */,
+				21E505997513D83AFD4626EECDFF20D1 /* ytcpsocket.c */,
+				5752BCCE211EF17F51DD509637DDD333 /* yudpsocket.c */,
+				FFC9005D7761A8434EFF9966F66F9A91 /* Support Files */,
+			);
+			name = SwiftSocket;
+			path = SwiftSocket;
+			sourceTree = "<group>";
+		};
+		ED6216C239FF1DC283D0BBEB3246A0FE /* Pods-UA Midi Control */ = {
+			isa = PBXGroup;
+			children = (
+				74BA5508CDE8A423EF2AFD74778EDFE6 /* Info.plist */,
+				4B17840D1EDCCDEC2FFA3A0E9BD4BAE6 /* Pods-UA Midi Control.modulemap */,
+				6ADE523A24A6F5F978F5B7D85581A12D /* Pods-UA Midi Control-acknowledgements.markdown */,
+				3DC807616AEE17EF0B06D0A7CA2CBFF9 /* Pods-UA Midi Control-acknowledgements.plist */,
+				94A6DD640646A83A952F1FA294D437C0 /* Pods-UA Midi Control-dummy.m */,
+				F31A21B55A856D5D732E53F1BF5611E3 /* Pods-UA Midi Control-frameworks.sh */,
+				A514C4D1F84720ECBEC758D92CD27807 /* Pods-UA Midi Control-resources.sh */,
+				C409E1A29ECBDE53A82CEAE7FD1B3D41 /* Pods-UA Midi Control-umbrella.h */,
+				B1BC9FE94B49AA6B526E3542A40B41F9 /* Pods-UA Midi Control.debug.xcconfig */,
+				4E67983FB3DD348BD0AA415A0367A644 /* Pods-UA Midi Control.release.xcconfig */,
+			);
+			name = "Pods-UA Midi Control";
+			path = "Target Support Files/Pods-UA Midi Control";
+			sourceTree = "<group>";
+		};
+		F3EE92B3E1036BE39FE5B6F5C90F3CB4 /* Pods-UA Midi ControlUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D26D786E5264144A515582CB653310BC /* Info.plist */,
+				CAF3867E9B7A5AFCD10A40F89B512407 /* Pods-UA Midi ControlUITests.modulemap */,
+				93DE5F689CD3B92FAF083669006378A1 /* Pods-UA Midi ControlUITests-acknowledgements.markdown */,
+				5AF500CFCCE54B12329C6D29554A5889 /* Pods-UA Midi ControlUITests-acknowledgements.plist */,
+				02BD4C68AA0953B0D8A101DFD1ABD8B8 /* Pods-UA Midi ControlUITests-dummy.m */,
+				693E05B12CDB02C63E947A3EE6537569 /* Pods-UA Midi ControlUITests-frameworks.sh */,
+				7D712395723CC96FA547C84F5AFDB174 /* Pods-UA Midi ControlUITests-resources.sh */,
+				705C1239B142838740D7B68779585583 /* Pods-UA Midi ControlUITests-umbrella.h */,
+				ACABE2B90F774C14C72F0B04814A428C /* Pods-UA Midi ControlUITests.debug.xcconfig */,
+				D674AB0AAD95216DCBD224169778FF37 /* Pods-UA Midi ControlUITests.release.xcconfig */,
+			);
+			name = "Pods-UA Midi ControlUITests";
+			path = "Target Support Files/Pods-UA Midi ControlUITests";
 			sourceTree = "<group>";
 		};
 		FA7AC8429882A95AA0810A9DCDED54FF /* OS X */ = {
@@ -389,68 +263,101 @@
 			name = "OS X";
 			sourceTree = "<group>";
 		};
+		FFC9005D7761A8434EFF9966F66F9A91 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				41ABC195FB77C6F55172860F6116DC66 /* Info.plist */,
+				2E755E372224FE54BF35609667B715B7 /* SwiftSocket.modulemap */,
+				44C277FEBD4445FD32195982BF3D6510 /* SwiftSocket.xcconfig */,
+				1A3482A89ED856ED2B4645D3BF63D48C /* SwiftSocket-dummy.m */,
+				8A9A27C833A0D22DCDFF5FE3CB44E25D /* SwiftSocket-prefix.pch */,
+				AA6F1113B6CB3FEBB75D760E6B096F87 /* SwiftSocket-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftSocket";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2AFC0D4A8B3FC0344F77BB23C683E6F7 /* Headers */ = {
+		304303AFCFCCA747F7935D41D65D917B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2442146714C8652F9DA013B611B0FBF /* AutoCoding-umbrella.h in Headers */,
-				37291C2EBB9A94FA3B4D7679DA3DDBF9 /* AutoCoding.h in Headers */,
+				145FB296B651496232924166C78A41EB /* Pods-UA Midi Control-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		69A0EDD85B40C323A3E77802D8FE3832 /* Headers */ = {
+		4AD497AB03CB3818BB4B5F9CA17B6FD2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E591C6F10B40CDFDBF67377E3AEB92BF /* Pods-Focusrite Midi ControlTests-umbrella.h in Headers */,
+				E962137DB6AAB0BC7F15F7B32F690F02 /* Pods-UA Midi ControlTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		81DC26E9A8297C86A857766F4FA04B9E /* Headers */ = {
+		85BED69376E74460D80C09630408FD75 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7122133E0F0BE6CA1111D704C3FA69EF /* Pods-Focusrite Midi ControlUITests-umbrella.h in Headers */,
+				9BFD6627ED3E96198B8D25CD08BBD9D3 /* Pods-UA Midi ControlUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B009D231B191E87751E79DDECE6707A2 /* Headers */ = {
+		897322D7D6F185524856DE9B62E6890D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D2A5DB8778BEBF65354EF26F754E6FC /* SWXMLHash-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EDFCE91571D07569A4A582D00B85D469 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				26B84639A7F797739CB3189AA0DB9BBB /* Pods-Focusrite Midi Control-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F041C077C576A57CD459A02CD8AE6B6C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				88B33252718CBC5DF36AAEBB3677795C /* SwiftSocket-umbrella.h in Headers */,
+				646298595DC6C51998718A619B3D72F6 /* SwiftSocket-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0B6898EE030EE6BDCE57C7E4EF771401 /* SwiftSocket */ = {
+		0612139CFD85DFFE6A0C6EB5E6380000 /* Pods-UA Midi ControlUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4D6E4771E87C7886EBF41C5C0D624E1B /* Build configuration list for PBXNativeTarget "SwiftSocket" */;
+			buildConfigurationList = D3D02332F68560E864A9086389841296 /* Build configuration list for PBXNativeTarget "Pods-UA Midi ControlUITests" */;
 			buildPhases = (
-				A957C4CC8598A00E50FFBFAC40ACFCC2 /* Sources */,
-				71C879BAEBC31CBB846EAAB18F66AD1E /* Frameworks */,
-				F041C077C576A57CD459A02CD8AE6B6C /* Headers */,
+				618D3029EEE2AEC728AAABDE5248D19E /* Sources */,
+				08D335F692E66F805B958638DEA90CB3 /* Frameworks */,
+				85BED69376E74460D80C09630408FD75 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FADDF44E6A558B6922114C5A4834B24D /* PBXTargetDependency */,
+			);
+			name = "Pods-UA Midi ControlUITests";
+			productName = "Pods-UA Midi ControlUITests";
+			productReference = CC5AD11F251D9324A3FC80B4D286AD7E /* Pods_UA_Midi_ControlUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		137374C163A68D49089EBFCC0FC63B13 /* Pods-UA Midi ControlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FE24F2635D0FB9C8287E7984C2AF027 /* Build configuration list for PBXNativeTarget "Pods-UA Midi ControlTests" */;
+			buildPhases = (
+				555BFE5E2D80EE928044D5DCD06CE493 /* Sources */,
+				0A41B3A25A3204D1B6F88FEDB4A37700 /* Frameworks */,
+				4AD497AB03CB3818BB4B5F9CA17B6FD2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96D2683233369F7939286F96C24E92FD /* PBXTargetDependency */,
+			);
+			name = "Pods-UA Midi ControlTests";
+			productName = "Pods-UA Midi ControlTests";
+			productReference = 5A281E3047C72C36D39419BC380D1F1F /* Pods_UA_Midi_ControlTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		81439A7FEDBE7A4379F79FCC9AC4311C /* SwiftSocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B597A7483F33FF1B2AD8759F001B0B04 /* Build configuration list for PBXNativeTarget "SwiftSocket" */;
+			buildPhases = (
+				1E3B4C92925D10CA9FF59867DC7FB12F /* Sources */,
+				5BC02976C67577EB6EAF30F02B02F0D7 /* Frameworks */,
+				897322D7D6F185524856DE9B62E6890D /* Headers */,
 			);
 			buildRules = (
 			);
@@ -458,97 +365,25 @@
 			);
 			name = SwiftSocket;
 			productName = SwiftSocket;
-			productReference = CDA5F128EAE51F1A4437B2037FB8D4AF /* SwiftSocket.framework */;
+			productReference = 8DB39FA9033E6C7139C6CBB809580566 /* SwiftSocket.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		3773B8A39B0A52978381D8737FBF6430 /* AutoCoding */ = {
+		8AC9ED34DE1956059FC0861D938022E9 /* Pods-UA Midi Control */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8582B65890D9EA1A9F5DE515FCD4E4B9 /* Build configuration list for PBXNativeTarget "AutoCoding" */;
+			buildConfigurationList = 41670C4762DBCC418EBA15DF02338624 /* Build configuration list for PBXNativeTarget "Pods-UA Midi Control" */;
 			buildPhases = (
-				FE78EE3CD72AA1FB2B3C95B523B5358B /* Sources */,
-				BD87B48ADCBB74A308173293BE7CF401 /* Frameworks */,
-				2AFC0D4A8B3FC0344F77BB23C683E6F7 /* Headers */,
+				45AEBFC5992D045A5F1C670C71FB58FE /* Sources */,
+				272BA81D92329EB3CC954D0B0ECFAACB /* Frameworks */,
+				304303AFCFCCA747F7935D41D65D917B /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FFF2C86226E66AE8C792FEA2AD663524 /* PBXTargetDependency */,
 			);
-			name = AutoCoding;
-			productName = AutoCoding;
-			productReference = 8FA23CA69C7BC1E91ADB2B7EF9791CFC /* AutoCoding.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		677A30BBEDD4DA633431C46D91780BB3 /* SWXMLHash */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1079B42418F33BED975A6D667522A568 /* Build configuration list for PBXNativeTarget "SWXMLHash" */;
-			buildPhases = (
-				9C3DF3C17661E4D1156F84CAA21872D6 /* Sources */,
-				BEFFCA0464CDBCD21BB325F8A536556D /* Frameworks */,
-				B009D231B191E87751E79DDECE6707A2 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SWXMLHash;
-			productName = SWXMLHash;
-			productReference = C27D221EA958EB811B5BDE4226E7F994 /* SWXMLHash.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		A9701DE261E8B2C1D3E4BA194384FB13 /* Pods-Focusrite Midi Control */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9D968935ECAC68F2E2D5AF036FF80F10 /* Build configuration list for PBXNativeTarget "Pods-Focusrite Midi Control" */;
-			buildPhases = (
-				76BFB6D7AD64E863C2C4A5BE745F50F8 /* Sources */,
-				47B9657E6D90B9CE764B34CD5837E52F /* Frameworks */,
-				EDFCE91571D07569A4A582D00B85D469 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A88C26EB042B13EB80F9E40146B60E04 /* PBXTargetDependency */,
-				7796FD08D93751941ABF35108AE2D198 /* PBXTargetDependency */,
-				9777B5AD72CF150FA42E12FD0C4BE3DF /* PBXTargetDependency */,
-			);
-			name = "Pods-Focusrite Midi Control";
-			productName = "Pods-Focusrite Midi Control";
-			productReference = F95B22F086106A84D96AA3DBE7FC5259 /* Pods_Focusrite_Midi_Control.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		BE4A962CCA4A1FBF157D71BE25F4A437 /* Pods-Focusrite Midi ControlUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EEEBB71B62919F6F56B45FC8A383CDC3 /* Build configuration list for PBXNativeTarget "Pods-Focusrite Midi ControlUITests" */;
-			buildPhases = (
-				EA5AAEE1B7283A12EEB49C8447AE1644 /* Sources */,
-				CAAFF17705954C9EC02307BC3625E39E /* Frameworks */,
-				81DC26E9A8297C86A857766F4FA04B9E /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6C4F9EA67069F4ECCF10C9BDE34FC944 /* PBXTargetDependency */,
-			);
-			name = "Pods-Focusrite Midi ControlUITests";
-			productName = "Pods-Focusrite Midi ControlUITests";
-			productReference = 95CB519FCA771F27C06270518F211924 /* Pods_Focusrite_Midi_ControlUITests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		CF05521707B7DB8090BC0DBAEF973EF0 /* Pods-Focusrite Midi ControlTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1EF77195C580F212B98A536EF5E57A85 /* Build configuration list for PBXNativeTarget "Pods-Focusrite Midi ControlTests" */;
-			buildPhases = (
-				1D3F0E0629F7CF1E6A16D57447C3BCFE /* Sources */,
-				7A79E13CFEDE9CF765657020B2115EAC /* Frameworks */,
-				69A0EDD85B40C323A3E77802D8FE3832 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A51B772534CBA4D75D7086FE521341A5 /* PBXTargetDependency */,
-			);
-			name = "Pods-Focusrite Midi ControlTests";
-			productName = "Pods-Focusrite Midi ControlTests";
-			productReference = AE694E27101420CB4814BF27BAB7509C /* Pods_Focusrite_Midi_ControlTests.framework */;
+			name = "Pods-UA Midi Control";
+			productName = "Pods-UA Midi Control";
+			productReference = 9941CC07386827B6B4E08DBB3929412C /* Pods_UA_Midi_Control.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -568,118 +403,86 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = F43CAC3B5AE37358E12CF106A46BCEDD /* Products */;
+			productRefGroup = 8BD6B01135360AFDAAFCA56843ADDFF3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3773B8A39B0A52978381D8737FBF6430 /* AutoCoding */,
-				A9701DE261E8B2C1D3E4BA194384FB13 /* Pods-Focusrite Midi Control */,
-				CF05521707B7DB8090BC0DBAEF973EF0 /* Pods-Focusrite Midi ControlTests */,
-				BE4A962CCA4A1FBF157D71BE25F4A437 /* Pods-Focusrite Midi ControlUITests */,
-				0B6898EE030EE6BDCE57C7E4EF771401 /* SwiftSocket */,
-				677A30BBEDD4DA633431C46D91780BB3 /* SWXMLHash */,
+				8AC9ED34DE1956059FC0861D938022E9 /* Pods-UA Midi Control */,
+				137374C163A68D49089EBFCC0FC63B13 /* Pods-UA Midi ControlTests */,
+				0612139CFD85DFFE6A0C6EB5E6380000 /* Pods-UA Midi ControlUITests */,
+				81439A7FEDBE7A4379F79FCC9AC4311C /* SwiftSocket */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1D3F0E0629F7CF1E6A16D57447C3BCFE /* Sources */ = {
+		1E3B4C92925D10CA9FF59867DC7FB12F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				028636950F19EFADA3895774230DE965 /* Pods-Focusrite Midi ControlTests-dummy.m in Sources */,
+				755E27134BC462E7359612D079D5F442 /* Result.swift in Sources */,
+				DB2AF64E9D5552B06065E972A297B8D2 /* Socket.swift in Sources */,
+				36D288163F4873B16F345BB3FCF6385B /* SwiftSocket-dummy.m in Sources */,
+				6D66A0AF8F8D0B6389ADFCF1B1A789BF /* TCPClient.swift in Sources */,
+				6C30EA17E1D7CD8441F2CCDCAF88644A /* UDPClient.swift in Sources */,
+				318E1DB16F9C9F6014AEFA153D3E9C07 /* ytcpsocket.c in Sources */,
+				95330DD40091DFF043C58D3CDF9EC077 /* yudpsocket.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		76BFB6D7AD64E863C2C4A5BE745F50F8 /* Sources */ = {
+		45AEBFC5992D045A5F1C670C71FB58FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CF15F4E0C410DBB8908097B696298AC /* Pods-Focusrite Midi Control-dummy.m in Sources */,
+				66F8C0E6CCBD6C8005A9C289D0C9EBDB /* Pods-UA Midi Control-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9C3DF3C17661E4D1156F84CAA21872D6 /* Sources */ = {
+		555BFE5E2D80EE928044D5DCD06CE493 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E9E1DEE0F3AF74DA797DC2A7BE4E3A1 /* SWXMLHash+TypeConversion.swift in Sources */,
-				7BD445AD1F0CFA7669B07A839FDD6529 /* SWXMLHash-dummy.m in Sources */,
-				599365A5B8041F72CA6AC06EC274F5DD /* SWXMLHash.swift in Sources */,
+				26D902F8F349AE9A17F816C69695314A /* Pods-UA Midi ControlTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A957C4CC8598A00E50FFBFAC40ACFCC2 /* Sources */ = {
+		618D3029EEE2AEC728AAABDE5248D19E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A0E794AE042B897D9C6C60A6A15FF1C /* Result.swift in Sources */,
-				6515664F7476456CDAE104EF4BBDF889 /* Socket.swift in Sources */,
-				EA38E0F73836BDB5A21AE94547B3BCE1 /* SwiftSocket-dummy.m in Sources */,
-				F8F31795B26DEAF8B61C92F780F282F8 /* TCPClient.swift in Sources */,
-				3CEF1B0B8BACCBE432D450200EF0E656 /* UDPClient.swift in Sources */,
-				BB36088511842E2DF8B6CB07691CB2E4 /* ytcpsocket.c in Sources */,
-				F8F8C6E810C7495FC6DCA45EA55DD0B2 /* yudpsocket.c in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EA5AAEE1B7283A12EEB49C8447AE1644 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EE78B26593879427AF2E7402E21C5EBB /* Pods-Focusrite Midi ControlUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FE78EE3CD72AA1FB2B3C95B523B5358B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				160D90B2A0BCCE40CB7715E157488295 /* AutoCoding-dummy.m in Sources */,
-				DE50FC0CC49D91C87172302A7713539A /* AutoCoding.m in Sources */,
+				2453EF45F736753475413CF55DB62033 /* Pods-UA Midi ControlUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6C4F9EA67069F4ECCF10C9BDE34FC944 /* PBXTargetDependency */ = {
+		96D2683233369F7939286F96C24E92FD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-Focusrite Midi Control";
-			target = A9701DE261E8B2C1D3E4BA194384FB13 /* Pods-Focusrite Midi Control */;
-			targetProxy = 3773E6890764F9C1D05C732C050630FB /* PBXContainerItemProxy */;
+			name = "Pods-UA Midi Control";
+			target = 8AC9ED34DE1956059FC0861D938022E9 /* Pods-UA Midi Control */;
+			targetProxy = 7D016298A99DDAC1C28EAC7B911DA701 /* PBXContainerItemProxy */;
 		};
-		7796FD08D93751941ABF35108AE2D198 /* PBXTargetDependency */ = {
+		FADDF44E6A558B6922114C5A4834B24D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SWXMLHash;
-			target = 677A30BBEDD4DA633431C46D91780BB3 /* SWXMLHash */;
-			targetProxy = BA11800AEB98D9DFD0D4226559F7E37C /* PBXContainerItemProxy */;
+			name = "Pods-UA Midi Control";
+			target = 8AC9ED34DE1956059FC0861D938022E9 /* Pods-UA Midi Control */;
+			targetProxy = 70E71A388A63B07C64079A2B0EBEB636 /* PBXContainerItemProxy */;
 		};
-		9777B5AD72CF150FA42E12FD0C4BE3DF /* PBXTargetDependency */ = {
+		FFF2C86226E66AE8C792FEA2AD663524 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftSocket;
-			target = 0B6898EE030EE6BDCE57C7E4EF771401 /* SwiftSocket */;
-			targetProxy = C9ABC8FC5261B395576C6EE3DF235F5D /* PBXContainerItemProxy */;
-		};
-		A51B772534CBA4D75D7086FE521341A5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-Focusrite Midi Control";
-			target = A9701DE261E8B2C1D3E4BA194384FB13 /* Pods-Focusrite Midi Control */;
-			targetProxy = 1FB4F5E5E69B2181C487339D7FA15D71 /* PBXContainerItemProxy */;
-		};
-		A88C26EB042B13EB80F9E40146B60E04 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AutoCoding;
-			target = 3773B8A39B0A52978381D8737FBF6430 /* AutoCoding */;
-			targetProxy = 56B126A1A06FC68E7EBB9E6853660A8A /* PBXContainerItemProxy */;
+			target = 81439A7FEDBE7A4379F79FCC9AC4311C /* SwiftSocket */;
+			targetProxy = 502BEB34C68EF6DAA4664D313A02432F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		03421AEE222716FEF46231234723872A /* Debug */ = {
+		1079ABDEDCA8B83893215B9A780F22FF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D1DC03FB0F1ABDCF8FFCDE35CFB4359 /* AutoCoding.xcconfig */;
+			baseConfigurationReference = ACABE2B90F774C14C72F0B04814A428C /* Pods-UA Midi ControlUITests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -692,30 +495,149 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/AutoCoding/AutoCoding-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AutoCoding/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-UA Midi ControlUITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				MODULEMAP_FILE = "Target Support Files/AutoCoding/AutoCoding.modulemap";
-				PRODUCT_MODULE_NAME = AutoCoding;
-				PRODUCT_NAME = AutoCoding;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/Pods-UA Midi ControlUITests/Pods-UA Midi ControlUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		54906BB17CDF0199F92AD1CA39217186 /* Debug */ = {
+		20DE8077963FA3D75ED77A5F7FB906AB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 15F16F2C39F51A664104BAAA8E42395F /* SwiftSocket.xcconfig */;
+			baseConfigurationReference = 682B1A5B671EE4B3CC2D7C477F7B0684 /* Pods-UA Midi ControlTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-UA Midi ControlTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/Pods-UA Midi ControlTests/Pods-UA Midi ControlTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		345D8111EF73AE4993E798AB6E8FC0D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 466453C49EC77D6F39C803B458ED7DEC /* Pods-UA Midi ControlTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-UA Midi ControlTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/Pods-UA Midi ControlTests/Pods-UA Midi ControlTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4481292D7D46836528777FC4C033C1B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E67983FB3DD348BD0AA415A0367A644 /* Pods-UA Midi Control.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-UA Midi Control/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/Pods-UA Midi Control/Pods-UA Midi Control.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		82A4F6308CE4A402C3EEF7402B718AB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44C277FEBD4445FD32195982BF3D6510 /* SwiftSocket.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -746,160 +668,6 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		568FDA59F65D0B5D75EFD5EFE625FB31 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8060D35FD2128D77BF76800F7C47F7D /* SWXMLHash.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/SWXMLHash/SWXMLHash-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SWXMLHash/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MODULEMAP_FILE = "Target Support Files/SWXMLHash/SWXMLHash.modulemap";
-				PRODUCT_MODULE_NAME = SWXMLHash;
-				PRODUCT_NAME = SWXMLHash;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		57C9686558B4E09B77B11CC4D47B6DB4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8060D35FD2128D77BF76800F7C47F7D /* SWXMLHash.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/SWXMLHash/SWXMLHash-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SWXMLHash/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MODULEMAP_FILE = "Target Support Files/SWXMLHash/SWXMLHash.modulemap";
-				PRODUCT_MODULE_NAME = SWXMLHash;
-				PRODUCT_NAME = SWXMLHash;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		7991B7A0BB5D53AC9C259275322596D1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 139DB20F843D18FAB680EBD807DAB538 /* Pods-Focusrite Midi Control.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-Focusrite Midi Control/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MODULEMAP_FILE = "Target Support Files/Pods-Focusrite Midi Control/Pods-Focusrite Midi Control.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		834C7B48FE15CD6F734B48A20D0DB309 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 948D6573BB650CEDF0E2EE9B27DE91CF /* Pods-Focusrite Midi ControlTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-Focusrite Midi ControlTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MODULEMAP_FILE = "Target Support Files/Pods-Focusrite Midi ControlTests/Pods-Focusrite Midi ControlTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -968,87 +736,9 @@
 			};
 			name = Debug;
 		};
-		9C7E927D0FB3D92946FE46A29CC111B0 /* Debug */ = {
+		B6C971C4505AFF00B70D18D668D26D38 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B025A0B23BAAA847BCA640492F9C944A /* Pods-Focusrite Midi ControlUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-Focusrite Midi ControlUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MODULEMAP_FILE = "Target Support Files/Pods-Focusrite Midi ControlUITests/Pods-Focusrite Midi ControlUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		CC19EC42BD94A26F99CD164B78A59528 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 90C7CAC7684FE3DD1843DBD6F5DBC07B /* Pods-Focusrite Midi ControlUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-Focusrite Midi ControlUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MODULEMAP_FILE = "Target Support Files/Pods-Focusrite Midi ControlUITests/Pods-Focusrite Midi ControlUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		CC2C032B349ABC79DF802E229623B2E2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 15F16F2C39F51A664104BAAA8E42395F /* SwiftSocket.xcconfig */;
+			baseConfigurationReference = 44C277FEBD4445FD32195982BF3D6510 /* SwiftSocket.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1084,9 +774,9 @@
 			};
 			name = Release;
 		};
-		D746496B77FFEA538D89A4AAA492A00C /* Release */ = {
+		D230F782BBD50785C5296C3E79FF3F47 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68F8B2E5765796841C88D842040797C9 /* Pods-Focusrite Midi ControlTests.release.xcconfig */;
+			baseConfigurationReference = B1BC9FE94B49AA6B526E3542A40B41F9 /* Pods-UA Midi Control.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1101,7 +791,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-Focusrite Midi ControlTests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-UA Midi Control/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1110,7 +800,7 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MODULEMAP_FILE = "Target Support Files/Pods-Focusrite Midi ControlTests/Pods-Focusrite Midi ControlTests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-UA Midi Control/Pods-UA Midi Control.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1118,15 +808,18 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		E0086FE7A427471526DB5BF83D44A7AE /* Release */ = {
+		D6583B23EF7363528D839451B667AA37 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D1DC03FB0F1ABDCF8FFCDE35CFB4359 /* AutoCoding.xcconfig */;
+			baseConfigurationReference = D674AB0AAD95216DCBD224169778FF37 /* Pods-UA Midi ControlUITests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1139,22 +832,23 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/AutoCoding/AutoCoding-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AutoCoding/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-UA Midi ControlUITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				MODULEMAP_FILE = "Target Support Files/AutoCoding/AutoCoding.modulemap";
-				PRODUCT_MODULE_NAME = AutoCoding;
-				PRODUCT_NAME = AutoCoding;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/Pods-UA Midi ControlUITests/Pods-UA Midi ControlUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1218,63 +912,14 @@
 			};
 			name = Release;
 		};
-		E63C7A9ADF391316BA1794F820A3E3D8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6327BAAA845B5C189F4D9386E2513231 /* Pods-Focusrite Midi Control.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-Focusrite Midi Control/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MODULEMAP_FILE = "Target Support Files/Pods-Focusrite Midi Control/Pods-Focusrite Midi Control.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1079B42418F33BED975A6D667522A568 /* Build configuration list for PBXNativeTarget "SWXMLHash" */ = {
+		0FE24F2635D0FB9C8287E7984C2AF027 /* Build configuration list for PBXNativeTarget "Pods-UA Midi ControlTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				57C9686558B4E09B77B11CC4D47B6DB4 /* Debug */,
-				568FDA59F65D0B5D75EFD5EFE625FB31 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1EF77195C580F212B98A536EF5E57A85 /* Build configuration list for PBXNativeTarget "Pods-Focusrite Midi ControlTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				834C7B48FE15CD6F734B48A20D0DB309 /* Debug */,
-				D746496B77FFEA538D89A4AAA492A00C /* Release */,
+				345D8111EF73AE4993E798AB6E8FC0D4 /* Debug */,
+				20DE8077963FA3D75ED77A5F7FB906AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1288,38 +933,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4D6E4771E87C7886EBF41C5C0D624E1B /* Build configuration list for PBXNativeTarget "SwiftSocket" */ = {
+		41670C4762DBCC418EBA15DF02338624 /* Build configuration list for PBXNativeTarget "Pods-UA Midi Control" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				54906BB17CDF0199F92AD1CA39217186 /* Debug */,
-				CC2C032B349ABC79DF802E229623B2E2 /* Release */,
+				D230F782BBD50785C5296C3E79FF3F47 /* Debug */,
+				4481292D7D46836528777FC4C033C1B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8582B65890D9EA1A9F5DE515FCD4E4B9 /* Build configuration list for PBXNativeTarget "AutoCoding" */ = {
+		B597A7483F33FF1B2AD8759F001B0B04 /* Build configuration list for PBXNativeTarget "SwiftSocket" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				03421AEE222716FEF46231234723872A /* Debug */,
-				E0086FE7A427471526DB5BF83D44A7AE /* Release */,
+				82A4F6308CE4A402C3EEF7402B718AB9 /* Debug */,
+				B6C971C4505AFF00B70D18D668D26D38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9D968935ECAC68F2E2D5AF036FF80F10 /* Build configuration list for PBXNativeTarget "Pods-Focusrite Midi Control" */ = {
+		D3D02332F68560E864A9086389841296 /* Build configuration list for PBXNativeTarget "Pods-UA Midi ControlUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7991B7A0BB5D53AC9C259275322596D1 /* Debug */,
-				E63C7A9ADF391316BA1794F820A3E3D8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EEEBB71B62919F6F56B45FC8A383CDC3 /* Build configuration list for PBXNativeTarget "Pods-Focusrite Midi ControlUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9C7E927D0FB3D92946FE46A29CC111B0 /* Debug */,
-				CC19EC42BD94A26F99CD164B78A59528 /* Release */,
+				1079ABDEDCA8B83893215B9A780F22FF /* Debug */,
+				D6583B23EF7363528D839451B667AA37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,0 +1,802 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		172ED9D120F27464000E7497 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172ED9D020F27464000E7497 /* PreferencesViewController.swift */; };
+		172ED9E820F2EC8F000E7497 /* MidiMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172ED9E720F2EC8F000E7497 /* MidiMessage.swift */; };
+		175F709B216AA451002E3A36 /* UADevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175F709A216AA451002E3A36 /* UADevice.swift */; };
+		175F709E216AC001002E3A36 /* JsonResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175F709D216AC001002E3A36 /* JsonResponse.swift */; };
+		175F70A2216AD5EB002E3A36 /* UAItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175F70A1216AD5EB002E3A36 /* UAItem.swift */; };
+		175F70AA216BDE75002E3A36 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 175F70A9216BDE75002E3A36 /* Icon.icns */; };
+		175F70AC216BEA3B002E3A36 /* UAMidiMappableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175F70AB216BEA3B002E3A36 /* UAMidiMappableItem.swift */; };
+		177908F620F0EF1500B7C702 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177908F520F0EF1500B7C702 /* AppDelegate.swift */; };
+		177908F820F0EF1500B7C702 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177908F720F0EF1500B7C702 /* ViewController.swift */; };
+		177908FA20F0EF1700B7C702 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 177908F920F0EF1700B7C702 /* Assets.xcassets */; };
+		177908FD20F0EF1700B7C702 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177908FB20F0EF1700B7C702 /* Main.storyboard */; };
+		17E120A120F1140A00700377 /* TCPListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E120A020F1140A00700377 /* TCPListener.swift */; };
+		17E120A720F1680000700377 /* MidiListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E120A620F1680000700377 /* MidiListener.swift */; };
+		2A5EE9D4336D5DC5657D9828 /* Pods_UA_Midi_ControlTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2117CE12974B2F9072703EE7 /* Pods_UA_Midi_ControlTests.framework */; };
+		4C8676735880FEB678D53FBA /* Pods_Focusrite_Midi_Control.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D44987C2326F587AE8A993E /* Pods_Focusrite_Midi_Control.framework */; };
+		7F5A254E5ECE5A3F92DF1475 /* Pods_UA_Midi_Control.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B683AAB98255F52ED81C0E41 /* Pods_UA_Midi_Control.framework */; };
+		CA304CDBE0CF854C2CD86D93 /* Pods_Focusrite_Midi_ControlTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD72703E25B0D4032124AAE /* Pods_Focusrite_Midi_ControlTests.framework */; };
+		F0F249BD6863DE61DF48E4C4 /* Pods_Focusrite_Midi_ControlUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F68C53C4C1A4FD83300A66E /* Pods_Focusrite_Midi_ControlUITests.framework */; };
+		FC85B1A8E54852010ACABCAB /* Pods_UA_Midi_ControlUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE2497E8638EBAD52B97F7C6 /* Pods_UA_Midi_ControlUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1779090520F0EF1700B7C702 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 177908EA20F0EF1500B7C702 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 177908F120F0EF1500B7C702;
+			remoteInfo = "Focusrite Midi Control";
+		};
+		1779091020F0EF1700B7C702 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 177908EA20F0EF1500B7C702 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 177908F120F0EF1500B7C702;
+			remoteInfo = "Focusrite Midi Control";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02A38C49C0790A5DFE1346A3 /* Pods-Focusrite Midi ControlUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Focusrite Midi ControlUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Focusrite Midi ControlUITests/Pods-Focusrite Midi ControlUITests.release.xcconfig"; sourceTree = "<group>"; };
+		05CBD5424B2C75D467CB5503 /* Pods-UA Midi ControlTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UA Midi ControlTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UA Midi ControlTests/Pods-UA Midi ControlTests.debug.xcconfig"; sourceTree = "<group>"; };
+		172ED9D020F27464000E7497 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
+		172ED9E720F2EC8F000E7497 /* MidiMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiMessage.swift; sourceTree = "<group>"; };
+		175F709A216AA451002E3A36 /* UADevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UADevice.swift; sourceTree = "<group>"; };
+		175F709D216AC001002E3A36 /* JsonResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonResponse.swift; sourceTree = "<group>"; };
+		175F70A1216AD5EB002E3A36 /* UAItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UAItem.swift; sourceTree = "<group>"; };
+		175F70A9216BDE75002E3A36 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
+		175F70AB216BEA3B002E3A36 /* UAMidiMappableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UAMidiMappableItem.swift; sourceTree = "<group>"; };
+		177908F220F0EF1500B7C702 /* UA Midi Control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UA Midi Control.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		177908F520F0EF1500B7C702 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		177908F720F0EF1500B7C702 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		177908F920F0EF1700B7C702 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		177908FC20F0EF1700B7C702 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		177908FE20F0EF1700B7C702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		177908FF20F0EF1700B7C702 /* UA_Midi_Control.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UA_Midi_Control.entitlements; sourceTree = "<group>"; };
+		1779090420F0EF1700B7C702 /* UA Midi ControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UA Midi ControlTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1779090F20F0EF1700B7C702 /* UA Midi ControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UA Midi ControlUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17E120A020F1140A00700377 /* TCPListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCPListener.swift; sourceTree = "<group>"; };
+		17E120A620F1680000700377 /* MidiListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiListener.swift; sourceTree = "<group>"; };
+		1F68C53C4C1A4FD83300A66E /* Pods_Focusrite_Midi_ControlUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Focusrite_Midi_ControlUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2117CE12974B2F9072703EE7 /* Pods_UA_Midi_ControlTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UA_Midi_ControlTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C99045A0E4D2F78130B7795 /* Pods-UA Midi Control.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UA Midi Control.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UA Midi Control/Pods-UA Midi Control.debug.xcconfig"; sourceTree = "<group>"; };
+		473891FBF3AF1F20EF23BD2A /* Pods-Focusrite Midi ControlUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Focusrite Midi ControlUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Focusrite Midi ControlUITests/Pods-Focusrite Midi ControlUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4D44987C2326F587AE8A993E /* Pods_Focusrite_Midi_Control.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Focusrite_Midi_Control.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		795B034CF5B3391B690AE692 /* Pods-Focusrite Midi Control.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Focusrite Midi Control.release.xcconfig"; path = "Pods/Target Support Files/Pods-Focusrite Midi Control/Pods-Focusrite Midi Control.release.xcconfig"; sourceTree = "<group>"; };
+		7D205D2B031CBC29DE3D10BD /* Pods-Focusrite Midi ControlTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Focusrite Midi ControlTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Focusrite Midi ControlTests/Pods-Focusrite Midi ControlTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7FD72703E25B0D4032124AAE /* Pods_Focusrite_Midi_ControlTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Focusrite_Midi_ControlTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		829F5688A81EC23163AE78B7 /* Pods-UA Midi ControlTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UA Midi ControlTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UA Midi ControlTests/Pods-UA Midi ControlTests.release.xcconfig"; sourceTree = "<group>"; };
+		830D2BCA39E77F6E19072BE1 /* Pods-UA Midi ControlUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UA Midi ControlUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UA Midi ControlUITests/Pods-UA Midi ControlUITests.release.xcconfig"; sourceTree = "<group>"; };
+		87D163D2553D153D9BF8F696 /* Pods-Focusrite Midi ControlTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Focusrite Midi ControlTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Focusrite Midi ControlTests/Pods-Focusrite Midi ControlTests.release.xcconfig"; sourceTree = "<group>"; };
+		B683AAB98255F52ED81C0E41 /* Pods_UA_Midi_Control.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UA_Midi_Control.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC0D0F707D9DE73FF9D5184B /* Pods-Focusrite Midi Control.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Focusrite Midi Control.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Focusrite Midi Control/Pods-Focusrite Midi Control.debug.xcconfig"; sourceTree = "<group>"; };
+		BE2497E8638EBAD52B97F7C6 /* Pods_UA_Midi_ControlUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UA_Midi_ControlUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9FF8479142667BAE0E12F6 /* Pods-UA Midi ControlUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UA Midi ControlUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UA Midi ControlUITests/Pods-UA Midi ControlUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D1DF4E2E4855251F23D9D8D9 /* Pods-UA Midi Control.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UA Midi Control.release.xcconfig"; path = "Pods/Target Support Files/Pods-UA Midi Control/Pods-UA Midi Control.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		177908EF20F0EF1500B7C702 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C8676735880FEB678D53FBA /* Pods_Focusrite_Midi_Control.framework in Frameworks */,
+				7F5A254E5ECE5A3F92DF1475 /* Pods_UA_Midi_Control.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1779090120F0EF1700B7C702 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA304CDBE0CF854C2CD86D93 /* Pods_Focusrite_Midi_ControlTests.framework in Frameworks */,
+				2A5EE9D4336D5DC5657D9828 /* Pods_UA_Midi_ControlTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1779090C20F0EF1700B7C702 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0F249BD6863DE61DF48E4C4 /* Pods_Focusrite_Midi_ControlUITests.framework in Frameworks */,
+				FC85B1A8E54852010ACABCAB /* Pods_UA_Midi_ControlUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		172ED9D320F28D3E000E7497 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				177908F720F0EF1500B7C702 /* ViewController.swift */,
+				172ED9D020F27464000E7497 /* PreferencesViewController.swift */,
+			);
+			name = Views;
+			path = "UA Midi Control/Views";
+			sourceTree = SOURCE_ROOT;
+		};
+		172ED9D620F29CC5000E7497 /* MIDI */ = {
+			isa = PBXGroup;
+			children = (
+				17E120A620F1680000700377 /* MidiListener.swift */,
+			);
+			name = MIDI;
+			path = "UA Midi Control/MIDI";
+			sourceTree = SOURCE_ROOT;
+		};
+		172ED9D720F29CCE000E7497 /* TCP */ = {
+			isa = PBXGroup;
+			children = (
+				17E120A020F1140A00700377 /* TCPListener.swift */,
+			);
+			name = TCP;
+			path = "UA Midi Control/TCP";
+			sourceTree = SOURCE_ROOT;
+		};
+		172ED9DC20F2B0D5000E7497 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				175F709C216ABFF0002E3A36 /* JSON */,
+				175F7099216AA41E002E3A36 /* UA */,
+				17589B7F20FA89CF0072AEA9 /* MIDI */,
+			);
+			name = Models;
+			path = "UA Midi Control";
+			sourceTree = SOURCE_ROOT;
+		};
+		17589B7F20FA89CF0072AEA9 /* MIDI */ = {
+			isa = PBXGroup;
+			children = (
+				172ED9E720F2EC8F000E7497 /* MidiMessage.swift */,
+			);
+			name = MIDI;
+			path = Models/MIDI;
+			sourceTree = "<group>";
+		};
+		175F7099216AA41E002E3A36 /* UA */ = {
+			isa = PBXGroup;
+			children = (
+				175F709A216AA451002E3A36 /* UADevice.swift */,
+				175F70A1216AD5EB002E3A36 /* UAItem.swift */,
+				175F70AB216BEA3B002E3A36 /* UAMidiMappableItem.swift */,
+			);
+			name = UA;
+			path = Models/UA;
+			sourceTree = "<group>";
+		};
+		175F709C216ABFF0002E3A36 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				175F709D216AC001002E3A36 /* JsonResponse.swift */,
+			);
+			name = JSON;
+			path = Models/JSON;
+			sourceTree = "<group>";
+		};
+		177908E920F0EF1500B7C702 = {
+			isa = PBXGroup;
+			children = (
+				177908F420F0EF1500B7C702 /* UA Midi Control */,
+				177908F320F0EF1500B7C702 /* Products */,
+				5CF844C6230477E864462276 /* Frameworks */,
+				935DA996967262752DEA8307 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		177908F320F0EF1500B7C702 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				177908F220F0EF1500B7C702 /* UA Midi Control.app */,
+				1779090420F0EF1700B7C702 /* UA Midi ControlTests.xctest */,
+				1779090F20F0EF1700B7C702 /* UA Midi ControlUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		177908F420F0EF1500B7C702 /* UA Midi Control */ = {
+			isa = PBXGroup;
+			children = (
+				172ED9DC20F2B0D5000E7497 /* Models */,
+				172ED9D720F29CCE000E7497 /* TCP */,
+				172ED9D620F29CC5000E7497 /* MIDI */,
+				172ED9D320F28D3E000E7497 /* Views */,
+				177908F520F0EF1500B7C702 /* AppDelegate.swift */,
+				177908F920F0EF1700B7C702 /* Assets.xcassets */,
+				177908FB20F0EF1700B7C702 /* Main.storyboard */,
+				175F70A9216BDE75002E3A36 /* Icon.icns */,
+				177908FE20F0EF1700B7C702 /* Info.plist */,
+				177908FF20F0EF1700B7C702 /* UA_Midi_Control.entitlements */,
+			);
+			path = "UA Midi Control";
+			sourceTree = "<group>";
+		};
+		5CF844C6230477E864462276 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D44987C2326F587AE8A993E /* Pods_Focusrite_Midi_Control.framework */,
+				7FD72703E25B0D4032124AAE /* Pods_Focusrite_Midi_ControlTests.framework */,
+				1F68C53C4C1A4FD83300A66E /* Pods_Focusrite_Midi_ControlUITests.framework */,
+				B683AAB98255F52ED81C0E41 /* Pods_UA_Midi_Control.framework */,
+				2117CE12974B2F9072703EE7 /* Pods_UA_Midi_ControlTests.framework */,
+				BE2497E8638EBAD52B97F7C6 /* Pods_UA_Midi_ControlUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		935DA996967262752DEA8307 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC0D0F707D9DE73FF9D5184B /* Pods-Focusrite Midi Control.debug.xcconfig */,
+				795B034CF5B3391B690AE692 /* Pods-Focusrite Midi Control.release.xcconfig */,
+				7D205D2B031CBC29DE3D10BD /* Pods-Focusrite Midi ControlTests.debug.xcconfig */,
+				87D163D2553D153D9BF8F696 /* Pods-Focusrite Midi ControlTests.release.xcconfig */,
+				473891FBF3AF1F20EF23BD2A /* Pods-Focusrite Midi ControlUITests.debug.xcconfig */,
+				02A38C49C0790A5DFE1346A3 /* Pods-Focusrite Midi ControlUITests.release.xcconfig */,
+				3C99045A0E4D2F78130B7795 /* Pods-UA Midi Control.debug.xcconfig */,
+				D1DF4E2E4855251F23D9D8D9 /* Pods-UA Midi Control.release.xcconfig */,
+				05CBD5424B2C75D467CB5503 /* Pods-UA Midi ControlTests.debug.xcconfig */,
+				829F5688A81EC23163AE78B7 /* Pods-UA Midi ControlTests.release.xcconfig */,
+				CE9FF8479142667BAE0E12F6 /* Pods-UA Midi ControlUITests.debug.xcconfig */,
+				830D2BCA39E77F6E19072BE1 /* Pods-UA Midi ControlUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		177908F120F0EF1500B7C702 /* UA Midi Control */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1779091820F0EF1700B7C702 /* Build configuration list for PBXNativeTarget "UA Midi Control" */;
+			buildPhases = (
+				540873AC4CCF4D928C06DA92 /* [CP] Check Pods Manifest.lock */,
+				177908EE20F0EF1500B7C702 /* Sources */,
+				177908EF20F0EF1500B7C702 /* Frameworks */,
+				177908F020F0EF1500B7C702 /* Resources */,
+				50A684D2DB9D337999CA4CD4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UA Midi Control";
+			productName = "Focusrite Midi Control";
+			productReference = 177908F220F0EF1500B7C702 /* UA Midi Control.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1779090320F0EF1700B7C702 /* UA Midi ControlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1779091B20F0EF1700B7C702 /* Build configuration list for PBXNativeTarget "UA Midi ControlTests" */;
+			buildPhases = (
+				B9BAAA754D22360226720287 /* [CP] Check Pods Manifest.lock */,
+				1779090020F0EF1700B7C702 /* Sources */,
+				1779090120F0EF1700B7C702 /* Frameworks */,
+				1779090220F0EF1700B7C702 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1779090620F0EF1700B7C702 /* PBXTargetDependency */,
+			);
+			name = "UA Midi ControlTests";
+			productName = "Focusrite Midi ControlTests";
+			productReference = 1779090420F0EF1700B7C702 /* UA Midi ControlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1779090E20F0EF1700B7C702 /* UA Midi ControlUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1779091E20F0EF1700B7C702 /* Build configuration list for PBXNativeTarget "UA Midi ControlUITests" */;
+			buildPhases = (
+				7AE70B4F22A0C8AACA298312 /* [CP] Check Pods Manifest.lock */,
+				1779090B20F0EF1700B7C702 /* Sources */,
+				1779090C20F0EF1700B7C702 /* Frameworks */,
+				1779090D20F0EF1700B7C702 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1779091120F0EF1700B7C702 /* PBXTargetDependency */,
+			);
+			name = "UA Midi ControlUITests";
+			productName = "Focusrite Midi ControlUITests";
+			productReference = 1779090F20F0EF1700B7C702 /* UA Midi ControlUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		177908EA20F0EF1500B7C702 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Antonio-Radu Varga";
+				TargetAttributes = {
+					177908F120F0EF1500B7C702 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					1779090320F0EF1700B7C702 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 177908F120F0EF1500B7C702;
+					};
+					1779090E20F0EF1700B7C702 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 177908F120F0EF1500B7C702;
+					};
+				};
+			};
+			buildConfigurationList = 177908ED20F0EF1500B7C702 /* Build configuration list for PBXProject "UA Midi Control" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 177908E920F0EF1500B7C702;
+			productRefGroup = 177908F320F0EF1500B7C702 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				177908F120F0EF1500B7C702 /* UA Midi Control */,
+				1779090320F0EF1700B7C702 /* UA Midi ControlTests */,
+				1779090E20F0EF1700B7C702 /* UA Midi ControlUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		177908F020F0EF1500B7C702 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				175F70AA216BDE75002E3A36 /* Icon.icns in Resources */,
+				177908FA20F0EF1700B7C702 /* Assets.xcassets in Resources */,
+				177908FD20F0EF1700B7C702 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1779090220F0EF1700B7C702 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1779090D20F0EF1700B7C702 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50A684D2DB9D337999CA4CD4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-UA Midi Control/Pods-UA Midi Control-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftSocket/SwiftSocket.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSocket.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UA Midi Control/Pods-UA Midi Control-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		540873AC4CCF4D928C06DA92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UA Midi Control-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AE70B4F22A0C8AACA298312 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UA Midi ControlUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9BAAA754D22360226720287 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UA Midi ControlTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		177908EE20F0EF1500B7C702 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				175F709B216AA451002E3A36 /* UADevice.swift in Sources */,
+				172ED9D120F27464000E7497 /* PreferencesViewController.swift in Sources */,
+				17E120A720F1680000700377 /* MidiListener.swift in Sources */,
+				175F70A2216AD5EB002E3A36 /* UAItem.swift in Sources */,
+				175F70AC216BEA3B002E3A36 /* UAMidiMappableItem.swift in Sources */,
+				172ED9E820F2EC8F000E7497 /* MidiMessage.swift in Sources */,
+				177908F820F0EF1500B7C702 /* ViewController.swift in Sources */,
+				175F709E216AC001002E3A36 /* JsonResponse.swift in Sources */,
+				17E120A120F1140A00700377 /* TCPListener.swift in Sources */,
+				177908F620F0EF1500B7C702 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1779090020F0EF1700B7C702 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1779090B20F0EF1700B7C702 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1779090620F0EF1700B7C702 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 177908F120F0EF1500B7C702 /* UA Midi Control */;
+			targetProxy = 1779090520F0EF1700B7C702 /* PBXContainerItemProxy */;
+		};
+		1779091120F0EF1700B7C702 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 177908F120F0EF1500B7C702 /* UA Midi Control */;
+			targetProxy = 1779091020F0EF1700B7C702 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		177908FB20F0EF1700B7C702 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				177908FC20F0EF1700B7C702 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1779091620F0EF1700B7C702 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1779091720F0EF1700B7C702 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		1779091920F0EF1700B7C702 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C99045A0E4D2F78130B7795 /* Pods-UA Midi Control.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "UA Midi Control/UA_Midi_Control.entitlements";
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2459T5GMZ7;
+				INFOPLIST_FILE = "UA Midi Control/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "raduvarga.UA-Midi-Control";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		1779091A20F0EF1700B7C702 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1DF4E2E4855251F23D9D8D9 /* Pods-UA Midi Control.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "UA Midi Control/UA_Midi_Control.entitlements";
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2459T5GMZ7;
+				INFOPLIST_FILE = "UA Midi Control/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "raduvarga.UA-Midi-Control";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		1779091C20F0EF1700B7C702 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05CBD5424B2C75D467CB5503 /* Pods-UA Midi ControlTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Focusrite Midi ControlTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "raduvarga.Focusrite-Midi-ControlTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UA Midi Control.app/Contents/MacOS/UA Midi Control";
+			};
+			name = Debug;
+		};
+		1779091D20F0EF1700B7C702 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 829F5688A81EC23163AE78B7 /* Pods-UA Midi ControlTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Focusrite Midi ControlTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "raduvarga.Focusrite-Midi-ControlTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UA Midi Control.app/Contents/MacOS/UA Midi Control";
+			};
+			name = Release;
+		};
+		1779091F20F0EF1700B7C702 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE9FF8479142667BAE0E12F6 /* Pods-UA Midi ControlUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Focusrite Midi ControlUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "raduvarga.Focusrite-Midi-ControlUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = "Focusrite Midi Control";
+			};
+			name = Debug;
+		};
+		1779092020F0EF1700B7C702 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 830D2BCA39E77F6E19072BE1 /* Pods-UA Midi ControlUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Focusrite Midi ControlUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "raduvarga.Focusrite-Midi-ControlUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = "Focusrite Midi Control";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		177908ED20F0EF1500B7C702 /* Build configuration list for PBXProject "UA Midi Control" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1779091620F0EF1700B7C702 /* Debug */,
+				1779091720F0EF1700B7C702 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1779091820F0EF1700B7C702 /* Build configuration list for PBXNativeTarget "UA Midi Control" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1779091920F0EF1700B7C702 /* Debug */,
+				1779091A20F0EF1700B7C702 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1779091B20F0EF1700B7C702 /* Build configuration list for PBXNativeTarget "UA Midi ControlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1779091C20F0EF1700B7C702 /* Debug */,
+				1779091D20F0EF1700B7C702 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1779091E20F0EF1700B7C702 /* Build configuration list for PBXNativeTarget "UA Midi ControlUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1779091F20F0EF1700B7C702 /* Debug */,
+				1779092020F0EF1700B7C702 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 177908EA20F0EF1500B7C702 /* Project object */;
+}

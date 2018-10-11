@@ -1,6 +1,0 @@
-framework module Pods_Focusrite_Midi_ControlTests {
-  umbrella header "Pods-Focusrite Midi ControlTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

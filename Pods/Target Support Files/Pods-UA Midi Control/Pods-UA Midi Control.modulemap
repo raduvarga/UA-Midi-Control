@@ -1,0 +1,6 @@
+framework module Pods_UA_Midi_Control {
+  umbrella header "Pods-UA Midi Control-umbrella.h"
+
+  export *
+  module * { export * }
+}
