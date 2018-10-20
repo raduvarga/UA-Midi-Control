@@ -227,8 +227,8 @@ class TCPListener: TCPClient{
     
     
     func sendMessage(msg:String){
-        var tcpMessage = String(format:"%@%@", msg, msgSeparator);
-        var data:Data = tcpMessage.data(using: .utf8)!
+        let tcpMessage = String(format:"%@%@", msg, msgSeparator);
+        let data:Data = tcpMessage.data(using: .utf8)!
         
         switch self.send(data: data) {
         case .success:

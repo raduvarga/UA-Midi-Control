@@ -64,7 +64,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func addDevice (id:String, info:JsonResponse<DeviceProperties, DeviceChildren>){
-        guard let uaDevice:UADevice = UADevice(id: id, info:info) else {return}
+        let uaDevice: UADevice = UADevice(id: id, info:info)
         
         uaDevices[id] = uaDevice
         

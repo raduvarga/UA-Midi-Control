@@ -38,6 +38,7 @@ class MidiMessage: NSObject {
         super.init()
         self.type = type
         self.nr = nr
+        self.asStr = ""
         toStr()
     }
     
@@ -46,6 +47,7 @@ class MidiMessage: NSObject {
         self.type = type
         self.nr = nr
         self.value = value
+        self.asStr = ""
         toStr()
     }
     

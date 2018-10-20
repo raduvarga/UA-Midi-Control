@@ -54,8 +54,7 @@ class UADevice: NSObject {
                     
                     if (item != nil){
 //                        print("item ", item)
-                        let midiItem: UAMidiMappableItem = item as! UAMidiMappableItem
-                        midiItem.midiMapMessage = MidiMessage(midiStr: midiStr)
+                        item?.midiMapMessage = MidiMessage(midiStr: midiStr)
                     } else{
                         let item = UAItem()
                         item.midiMapMessage = MidiMessage(midiStr: midiStr)
@@ -75,22 +74,18 @@ class UADevice: NSObject {
         UserDefaults.standard.set(midiMaps, forKey: "midiMaps")
         
         for id in ids{
-            let item:UAItem? = items[id]
-            if (item != nil){
-                let midiItem: UAMidiMappableItem = (item as! UAMidiMappableItem)
-                midiItem.midiMapMessage.copy(midiMessage: midiMessage)
-            }
+            guard  let item:UAItem = items[id] else {return}
+            item.midiMapMessage.copy(midiMessage: midiMessage)
         }
     }
     
     func removeMidiMap(midiStr: String){
-        let oldMappingIds:[String]? = midiMaps[midiStr]
-        if(oldMappingIds != nil){
-            for oldMappingId in oldMappingIds!{
-                let oldMappingItem: UAItem? = items[oldMappingId]
-                (oldMappingItem as! UAMidiMappableItem).midiMapMessage.clear()
-                midiMaps.removeValue(forKey: midiStr)
-            }
+        guard let oldMappingIds:[String] = midiMaps[midiStr] else {return}
+        
+        for oldMappingId in oldMappingIds{
+            guard let oldMappingItem: UAItem = items[oldMappingId] else {return}
+            oldMappingItem.midiMapMessage.clear()
+            midiMaps.removeValue(forKey: midiStr)
         }
     }
     
@@ -101,13 +96,11 @@ class UADevice: NSObject {
     }
     
     func findItems(midiMessage: MidiMessage) -> [UAItem]?{
-        let ids:[String]? = midiMaps[midiMessage.asStr]
         var result: [UAItem] = []
+        guard let ids:[String] = midiMaps[midiMessage.asStr] else {return result}
         
-        if (ids != nil){
-            for id in ids!{
-                result.append(items[id]!)
-            }
+        for id in ids{
+            result.append(items[id]!)
         }
         return result
     }
