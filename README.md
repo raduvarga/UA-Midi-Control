@@ -22,8 +22,6 @@ Alas, you can now have a central mixer for both your DAW and UA on the same Midi
 
 ## This doesn't work with my UA machine
 
-I've specifically tailored this app to work with my device, which is a Scarlett 18i8 (2nd gen).
-There are quite a few input/output options, but there might be things that will be missing from your device.
 Create an issue with your specific problem, and I'll see what I can sort out.
 
 ## But this doesn't work on Windows..help?
