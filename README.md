@@ -22,8 +22,6 @@ Alas, you can now have a central mixer for both your DAW and UA on the same Midi
 
 ## This doesn't work with my UA machine
 
-I've specifically tailored this app to work with my device, which is a Scarlett 18i8 (2nd gen).
-There are quite a few input/output options, but there might be things that will be missing from your device.
 Create an issue with your specific problem, and I'll see what I can sort out.
 
 ## But this doesn't work on Windows..help?
@@ -43,18 +41,20 @@ For sending/receiving TCP messages, a few important things:
 - I saw that the Console app sends a perioadical `set /Sleep false` message (seems like a Keep Alive message). I do it as well, every 3 seconds. I haven't seen any difference between sending or not sending this message, but I guess it's a good thing to do.
 
 Wireshark also allowed me to figure out the form of the commands and response values, which are as follows:
-- Commands - `method path` - e.g. `set /devices/inputs/FaderLevelTapered/value/1`
-		   - I've identified the following methods: `get` `set` `subscribe`
-		   - and some of the paths I've used: `/devices`,  `/devices/{id}/inputs`, `/devices/{id}/inputs/{id}`, `/devices/{id}/DeviceOnline`, `/devices/{id}/DeviceOnline`, etc
-		   - The list of commands I've identified are not exclusive, I only got a few of them via Wireshark, the others I've discovered through oldschool pattern recognition. So there might be much more out there.
+- Commands:
+	 - `method path` - e.g. `set /devices/inputs/FaderLevelTapered/value/1`
+	 - I've identified the following methods: `get` `set` `subscribe`
+	 - and some of the paths I've used: `/devices`,  `/devices/{id}/inputs`, `/devices/{id}/inputs/{id}`, `/devices/{id}/DeviceOnline`, `/devices/{id}/DeviceOnline`, etc
+	- The list of commands I've identified are not exclusive, I only got a few of them via Wireshark, the others I've discovered through oldschool pattern recognition. So there might be much more out there.
 
-- Responses  - they come in JSON, in the following base format: `{"path": path, "data": {"properties": props, "children": children}}`
-		     - the `path` field is handy, because you can link your requests to your results (remember that plain TCP doesn't have all the perks of HTTP)
-             - example answer for `get /devices` command: `{"path": "/devices", "data": {"properties": {"Type": {"type": "string", "value": "container"}}, "children": {"0": {}}}}`
+- Responses:
+	- they come in JSON, in the following base format: `{"path": path, "data": {"properties": props, "children": children}}`
+	- the `path` field is handy, because you can link your requests to your results (remember that plain TCP doesn't have all the perks of HTTP)
+	- example answer for `get /devices` command: `{"path": "/devices", "data": {"properties": {"Type": {"type": "string", "value": "container"}}, "children": {"0": {}}}}`
 
 Walkthrough of the communication steps I did to achieve this app:
 1. Send a `get /devices` request. In the response, the list of children will your available device ids.
-2. For each device id, send a `subscribe /devices/{id}/DeviceOnline`. Response: `{"path": "/devices/0/DeviceOnline/value", "data": false}`. Useful for showing when the interaface is connected or not (Online/Offline in the app UI)
+2. For each device id, send a `subscribe /devices/{id}/DeviceOnline`. Response: `{"path": "/devices/0/DeviceOnline/value", "data": false}`. Useful for showing when the interface is connected or not (Online/Offline in the app UI)
 3. For each device id, send a `get /devices/{id}`. There are a few useful infos here, I only use the `DeviceName` here.
 4. For each device id, send a `get /devices/{id}/inputs`. This looks like this: `{"path": "/devices/0/inputs", "data": {"properties": {"Type": {"type": "string", "value": "container"}}, "children": {"0": {}, "1": {}, "2": {}, "3": {}, "4": {}, "5": {}, "6": {}, "7": {}, "8": {}, "9": {}, "10": {}, "11": {}, "12": {}, "13": {}, "14": {}, "15": {}, "16": {}, "17": {}, "18": {}, "19": {}, "20": {}, "21": {}}}}`. Again, you get the input id's as the children fields, which it's slightly annoying because you don't know in advance the exact JSON Model for parsing, so you'll have to do a bit of manual work there, not too bad in the end.
 5. For each input id, send a  `get /devices/{devId}/inputs/{inputId}`. What I use from here is the `Name` property, which has a `default` (default name of that input) and a `value` (user custom name of that input). I show them both in the UI for clarity.
