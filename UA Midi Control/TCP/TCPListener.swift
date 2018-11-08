@@ -56,11 +56,63 @@ class TCPListener: TCPClient{
         start()
     }
     
-    func sendVolMessage(item: UAItem, volume: Int){
-        var volume:Double = Double(volume)/100
-        volume = 1/1.27 * volume
-        
-        sendVolumeMessage(devId: item.parentId, inputId: item.id, vol: String(format: "%.6f", volume))
+    func getTaperedLevel (value:Int) -> Double{
+        var taptered:Double = Double(value)/100
+        taptered = 1/1.27 * taptered
+        return taptered
+    }
+    
+    func getBool (value:Int) -> Bool{
+        return value > 0
+    }
+    
+    func sendUpdateMessage(mapping: UAMapping, value: Int){
+        switch mapping.mix {
+        case "Inputs":
+            sendVolumeMessage(devId: mapping.deviceId, inputId: mapping.inputId,
+                              value: value)
+        case "Gain":
+            sendGainPreampMessage(devId: mapping.deviceId, inputId: mapping.inputId,
+                                  value: value)
+        case "Pad", "Phase","LowCut","48V":
+            sendBoolPreampMessage(devId: mapping.deviceId, inputId: mapping.inputId,
+                                  property: mapping.mix, value: value)
+        case "Send 0", "Send 1", "Send 2", "Send 3":
+            sendGainSendMessage(devId: mapping.deviceId, inputId: mapping.inputId,
+                                sendId: String(mapping.mix.last!), value: value)
+        default:
+            return
+        }
+    }
+    
+    func sendBoolPreampMessage(devId: String, inputId: String, property: String, value: Int){
+        sendMessage(msg: "set /devices/" + devId + "/inputs/" + inputId + "/preamps/0/" + property + "/value " + String(getBool(value: value)))
+    }
+    func sendGainSendMessage(devId: String, inputId: String, sendId: String, value: Int){
+        sendMessage(msg: "set /devices/" + devId + "/inputs/" + inputId + "/sends/" + sendId + "/GainTapered/value " +
+            String(format: "%.6f",  getTaperedLevel(value: value)))
+    }
+    func sendGainPreampMessage(devId: String, inputId: String, value: Int){
+        sendMessage(msg: "set /devices/" + devId + "/inputs/" + inputId + "/preamps/0/GainTapered/value " +
+            String(format: "%.6f",  getTaperedLevel(value: value)))
+    }
+    func sendVolumeMessage(devId: String, inputId: String, value: Int){
+        sendMessage(msg: "set /devices/" + devId + "/inputs/" + inputId + "/FaderLevelTapered/value/ " +
+            String(format: "%.6f",  getTaperedLevel(value: value)))
+    }
+    func sendGetDevices(){
+        sendMessage(msg: "get /devices")
+    }
+    func sendGetDevice(devId: String){
+        sendMessage(msg: "get /devices/" + devId)
+        sendMessage(msg: "subscribe /devices/" + devId + "/DeviceOnline")
+    }
+    func sendGetInputs(devId: String){
+        sendMessage(msg: "get /devices/" + devId + "/inputs")
+    }
+    func sendGetInput(devId: String, inputId: String){
+        sendMessage(msg: "get /devices/" + devId + "/inputs/" + inputId)
+        sendMessage(msg: "get /devices/" + devId + "/inputs/" + inputId + "/sends")
     }
     
     func convertToDictionary(text: String) -> [String: Any]? {
@@ -95,23 +147,6 @@ class TCPListener: TCPClient{
         } catch {
             return false
         }
-    }
-    
-    func sendVolumeMessage(devId: String, inputId: String, vol: String){
-        sendMessage(msg: "set /devices/" + devId + "/inputs/" + inputId + "/FaderLevelTapered/value/ " + vol)
-    }
-    func sendGetDevices(){
-        sendMessage(msg: "get /devices")
-    }
-    func sendGetDevice(devId: String){
-        sendMessage(msg: "get /devices/" + devId)
-        sendMessage(msg: "subscribe /devices/" + devId + "/DeviceOnline")
-    }
-    func sendGetInputs(devId: String){
-        sendMessage(msg: "get /devices/" + devId + "/inputs")
-    }
-    func sendGetInput(devId: String, inputId: String){
-        sendMessage(msg: "get /devices/" + devId + "/inputs/" + inputId)
     }
     
     func handleMessage(msg: String){
@@ -162,7 +197,9 @@ class TCPListener: TCPClient{
                     } else if (jsonPath.count == 4) {
                         let inputId:String = String(jsonPath[3])
                          let jsonResponse = try decoder.decode(JsonResponse<InputProperties, InputChildren>.self, from: jsonData)
-                        appDelegate.addInput(devId: devId ,inputId: inputId, info: jsonResponse)
+                        
+                        let childrenKeys = getJsonChildren(jsonData: jsonData)
+                        appDelegate.addInput(devId: devId ,inputId: inputId, info: jsonResponse, children: childrenKeys)
                     }
                 } else {
                     

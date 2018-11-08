@@ -11,13 +11,13 @@
 		172ED9E820F2EC8F000E7497 /* MidiMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172ED9E720F2EC8F000E7497 /* MidiMessage.swift */; };
 		175F709B216AA451002E3A36 /* UADevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175F709A216AA451002E3A36 /* UADevice.swift */; };
 		175F709E216AC001002E3A36 /* JsonResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175F709D216AC001002E3A36 /* JsonResponse.swift */; };
-		175F70A2216AD5EB002E3A36 /* UAItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175F70A1216AD5EB002E3A36 /* UAItem.swift */; };
+		175F70A2216AD5EB002E3A36 /* UAInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175F70A1216AD5EB002E3A36 /* UAInput.swift */; };
 		175F70AA216BDE75002E3A36 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 175F70A9216BDE75002E3A36 /* Icon.icns */; };
-		175F70AC216BEA3B002E3A36 /* UAMidiMappableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175F70AB216BEA3B002E3A36 /* UAMidiMappableItem.swift */; };
 		177908F620F0EF1500B7C702 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177908F520F0EF1500B7C702 /* AppDelegate.swift */; };
 		177908F820F0EF1500B7C702 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177908F720F0EF1500B7C702 /* ViewController.swift */; };
 		177908FA20F0EF1700B7C702 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 177908F920F0EF1700B7C702 /* Assets.xcassets */; };
 		177908FD20F0EF1700B7C702 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177908FB20F0EF1700B7C702 /* Main.storyboard */; };
+		17AA65072194B7DF004D5D44 /* UAMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AA65062194B7DF004D5D44 /* UAMapping.swift */; };
 		17E120A120F1140A00700377 /* TCPListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E120A020F1140A00700377 /* TCPListener.swift */; };
 		17E120A720F1680000700377 /* MidiListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E120A620F1680000700377 /* MidiListener.swift */; };
 		2A5EE9D4336D5DC5657D9828 /* Pods_UA_Midi_ControlTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2117CE12974B2F9072703EE7 /* Pods_UA_Midi_ControlTests.framework */; };
@@ -52,9 +52,8 @@
 		172ED9E720F2EC8F000E7497 /* MidiMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiMessage.swift; sourceTree = "<group>"; };
 		175F709A216AA451002E3A36 /* UADevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UADevice.swift; sourceTree = "<group>"; };
 		175F709D216AC001002E3A36 /* JsonResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonResponse.swift; sourceTree = "<group>"; };
-		175F70A1216AD5EB002E3A36 /* UAItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UAItem.swift; sourceTree = "<group>"; };
+		175F70A1216AD5EB002E3A36 /* UAInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UAInput.swift; sourceTree = "<group>"; };
 		175F70A9216BDE75002E3A36 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
-		175F70AB216BEA3B002E3A36 /* UAMidiMappableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UAMidiMappableItem.swift; sourceTree = "<group>"; };
 		177908F220F0EF1500B7C702 /* UA Midi Control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UA Midi Control.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		177908F520F0EF1500B7C702 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		177908F720F0EF1500B7C702 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +63,7 @@
 		177908FF20F0EF1700B7C702 /* UA_Midi_Control.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UA_Midi_Control.entitlements; sourceTree = "<group>"; };
 		1779090420F0EF1700B7C702 /* UA Midi ControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UA Midi ControlTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1779090F20F0EF1700B7C702 /* UA Midi ControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UA Midi ControlUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17AA65062194B7DF004D5D44 /* UAMapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UAMapping.swift; sourceTree = "<group>"; };
 		17E120A020F1140A00700377 /* TCPListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCPListener.swift; sourceTree = "<group>"; };
 		17E120A620F1680000700377 /* MidiListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiListener.swift; sourceTree = "<group>"; };
 		1F68C53C4C1A4FD83300A66E /* Pods_Focusrite_Midi_ControlUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Focusrite_Midi_ControlUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,8 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				175F709A216AA451002E3A36 /* UADevice.swift */,
-				175F70A1216AD5EB002E3A36 /* UAItem.swift */,
-				175F70AB216BEA3B002E3A36 /* UAMidiMappableItem.swift */,
+				175F70A1216AD5EB002E3A36 /* UAInput.swift */,
+				17AA65062194B7DF004D5D44 /* UAMapping.swift */,
 			);
 			name = UA;
 			path = Models/UA;
@@ -465,8 +465,8 @@
 				175F709B216AA451002E3A36 /* UADevice.swift in Sources */,
 				172ED9D120F27464000E7497 /* PreferencesViewController.swift in Sources */,
 				17E120A720F1680000700377 /* MidiListener.swift in Sources */,
-				175F70A2216AD5EB002E3A36 /* UAItem.swift in Sources */,
-				175F70AC216BEA3B002E3A36 /* UAMidiMappableItem.swift in Sources */,
+				175F70A2216AD5EB002E3A36 /* UAInput.swift in Sources */,
+				17AA65072194B7DF004D5D44 /* UAMapping.swift in Sources */,
 				172ED9E820F2EC8F000E7497 /* MidiMessage.swift in Sources */,
 				177908F820F0EF1500B7C702 /* ViewController.swift in Sources */,
 				175F709E216AC001002E3A36 /* JsonResponse.swift in Sources */,

@@ -881,7 +881,7 @@
                                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                                     </textFieldCell>
                                                                     <connections>
-                                                                        <binding destination="iMB-4z-fgb" name="value" keyPath="objectValue.midiMapMessage.printStr" id="7dh-jJ-gVs"/>
+                                                                        <binding destination="iMB-4z-fgb" name="value" keyPath="objectValue.midiMessageForPrinting" id="VHM-DF-jqW"/>
                                                                     </connections>
                                                                 </textField>
                                                             </subviews>
@@ -893,6 +893,7 @@
                                                 </tableColumn>
                                             </tableColumns>
                                             <connections>
+                                                <action selector="ddd:" target="XfG-lQ-9wD" id="aWj-wJ-1fx"/>
                                                 <outlet property="dataSource" destination="XfG-lQ-9wD" id="84u-HG-LuD"/>
                                                 <outlet property="delegate" destination="XfG-lQ-9wD" id="YqD-WA-p2J"/>
                                             </connections>
@@ -913,16 +914,16 @@
                                 </tableHeaderView>
                             </scrollView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OQB-qL-HcX">
-                                <rect key="frame" x="35" y="329" width="39" height="17"/>
+                                <rect key="frame" x="6" y="329" width="96" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Mixes" id="kEF-pr-BjK">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Mappable stuff" id="kEF-pr-BjK">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b28-K3-8nc">
-                                <rect key="frame" x="377" y="329" width="113" height="17"/>
+                                <rect key="frame" x="294" y="329" width="113" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Inputs" id="9IH-LD-kYD">
                                     <font key="font" metaFont="system"/>
@@ -940,21 +941,21 @@
                                 </textFieldCell>
                             </textField>
                             <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="22" horizontalPageScroll="10" verticalLineScroll="22" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRY-Da-OIL">
-                                <rect key="frame" x="8" y="32" width="140" height="290"/>
+                                <rect key="frame" x="8" y="33" width="140" height="288"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <clipView key="contentView" ambiguous="YES" id="emb-eT-e7B">
-                                    <rect key="frame" x="1" y="0.0" width="138" height="289"/>
+                                    <rect key="frame" x="1" y="0.0" width="138" height="287"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="20" rowSizeStyle="automatic" headerView="loP-Id-lme" viewBased="YES" id="mpn-Da-Vz9">
-                                            <rect key="frame" x="0.0" y="0.0" width="138" height="266"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="138" height="264"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                             <tableColumns>
                                                 <tableColumn identifier="" width="135" minWidth="40" maxWidth="1000" id="air-Aq-jXw">
-                                                    <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="Mixes">
+                                                    <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="Mixes &amp; Properties">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -1001,7 +1002,7 @@
                                     <rect key="frame" x="1" y="8" width="0.0" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
-                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="JtY-jN-z8m">
+                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="JtY-jN-z8m">
                                     <rect key="frame" x="224" y="17" width="15" height="102"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -1044,10 +1045,10 @@
                         <outlet property="creditsLabel" destination="yfm-Od-rA4" id="t6w-Wb-hvK"/>
                         <outlet property="deviceNameLabel" destination="60v-1e-SzY" id="FbY-a5-9Zk"/>
                         <outlet property="mixLabel" destination="b28-K3-8nc" id="to0-SF-ge3"/>
-                        <outlet property="mixTableView" destination="LVx-jS-iSg" id="plD-P2-AYt"/>
+                        <outlet property="mixesTableView" destination="mpn-Da-Vz9" id="scI-63-gSh"/>
                         <outlet property="onlineLabel" destination="Z04-zH-U3s" id="Zkx-qu-yGW"/>
-                        <outlet property="outputsTableView" destination="mpn-Da-Vz9" id="scI-63-gSh"/>
                         <outlet property="sourceItemView" destination="OQB-qL-HcX" id="x2o-7V-DDg"/>
+                        <outlet property="valuesTableView" destination="LVx-jS-iSg" id="plD-P2-AYt"/>
                         <outlet property="versionLabel" destination="DCp-Q3-BcV" id="XHN-VJ-Zs3"/>
                     </connections>
                 </viewController>

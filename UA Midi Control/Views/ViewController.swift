@@ -15,8 +15,8 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
     @IBOutlet weak var mixLabel: NSTextField!
     @IBOutlet weak var connectedLabel: NSTextField!
     @IBOutlet weak var deviceNameLabel: NSTextField!
-    @IBOutlet weak var mixTableView: NSTableView!
-    @IBOutlet weak var outputsTableView: NSTableView!
+    @IBOutlet weak var valuesTableView: NSTableView!
+    @IBOutlet weak var mixesTableView: NSTableView!
     @IBOutlet weak var creditsLabel: NSTextField!
     @IBOutlet weak var versionLabel: NSTextField!
     @IBOutlet weak var onlineLabel: NSTextField!
@@ -54,8 +54,8 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
     @IBAction func onResetMidiMappings(_ sender: Any) {
         if(appDelegate.selectedUADevice != nil){
             UserDefaults.standard.set([:], forKey: "midiMaps")
-            appDelegate.selectedUADevice?.removeAllMidiMaps()
-            mixTableView.reloadData()
+            appDelegate.removeAllMidiMaps()
+            valuesTableView.reloadData()
         }
     }
     
@@ -65,7 +65,7 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
             let myAttribute = [ NSAttributedStringKey.foregroundColor: NSColor.black ]
             let myAttrString = NSAttributedString(string: myString, attributes: myAttribute)
             sender.attributedTitle = myAttrString
-            mixTableView.reloadData()
+            valuesTableView.reloadData()
             
             appDelegate.isMidiMapping = false
         }else{
@@ -73,17 +73,17 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
             let myAttribute = [ NSAttributedStringKey.foregroundColor: NSColor.red ]
             let myAttrString = NSAttributedString(string: myString, attributes: myAttribute)
             sender.attributedTitle = myAttrString
-            
+        
             appDelegate.isMidiMapping = true
         }
     }
     
     func setMidiMapping(){
         DispatchQueue.main.async{
-            if(self.mixTableView.selectedRow != -1){
-                let nrRows: Int = self.mixTableView.numberOfRows - 1
+            if(self.valuesTableView.selectedRow != -1){
+                let nrRows: Int = self.valuesTableView.numberOfRows - 1
                 let rows: IndexSet =  IndexSet(0...nrRows)
-                self.mixTableView.reloadData(forRowIndexes: rows, columnIndexes: [1])
+                self.valuesTableView.reloadData(forRowIndexes: rows, columnIndexes: [1])
             }
         }
     }
@@ -108,56 +108,79 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
     
     func onInputRefresh(){
         DispatchQueue.main.async{
-            self.mixTableView.reloadData()
-            self.outputsTableView.reloadData()
+            self.valuesTableView.reloadData()
+            self.mixesTableView.reloadData()
         }
     }
     
     func tableViewSelectionDidChange(_ notification: Notification){
         let tableView:NSTableView? = notification.object as? NSTableView
-        if(tableView == mixTableView){
-            if (appDelegate.isMidiMapping && mixTableView.selectedRow > -1){
-                let input = getInputs()[mixTableView.selectedRow]
-                appDelegate.selectedMidiMapIndex = mixTableView.selectedRow
+        if(tableView == valuesTableView){
+            if (appDelegate.isMidiMapping && valuesTableView.selectedRow > -1){
+                let input = getValues()[valuesTableView.selectedRow]
                 appDelegate.selectedMidiMapId = input.id
             }
         }else {
-            if (outputsTableView.selectedRow > -1){
+            if (mixesTableView.selectedRow > -1){
+                appDelegate.selectedMix = appDelegate.mixes[mixesTableView.selectedRow]
+                mixLabel.stringValue = appDelegate.selectedMix
             
-                mixTableView.reloadData()
+                valuesTableView.reloadData()
             }
         }
     }
     
-    func getInputs() -> [UAItem]{
-        var inputs: [UAItem] = (appDelegate.selectedUADevice?.items.map({$0.value}))!
+    func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
+        if(tableView == valuesTableView){
+            let values: [UAInput] = getValues()
+            
+            for input in values{
+                let midiMessageStr = appDelegate.findMappingMessage(deviceId: input.parentId, inputId: input.id, mix: appDelegate.selectedMix)
+                input.setMidiMessageForPrinting(str: midiMessageStr)
+            }
+            
+            return values[row]
+        }else {
+            return appDelegate.mixes[row]
+        }
+    }
+    
+    func getInputs() -> [UAInput]{
+        var inputs: [UAInput] = (appDelegate.selectedUADevice?.inputs.map({$0.value}))!
         inputs = inputs.sorted(by: { $0.id < $1.id })
         
         return inputs
     }
     
+    func getPreamps() -> [UAInput]{
+        var preamps: [UAInput] = (appDelegate.selectedUADevice?.inputs.map({$0.value}).filter({$0.hasPreamps()}))!
+        
+        return preamps
+    }
+    
+    func getValues() -> [UAInput]{
+        switch appDelegate.selectedMix {
+        case "Inputs", "Send 0", "Send 1", "Send 2", "Send 3":
+            return getInputs()
+        case "Gain", "Pad", "Phase", "LowCut", "48V":
+            return getPreamps()
+        default:
+            return getInputs()
+        }
+    }
+    
     func numberOfRows(in tableView: NSTableView) -> Int {
         var count = 0
-        if(tableView == mixTableView){
+        if(tableView == valuesTableView){
             if (appDelegate.selectedUADevice != nil){
-                count = (appDelegate.selectedUADevice?.items.keys.count)!
+                count = getValues().count
             } else {
                 count = 0
             }
         } else{
-            count = 1
+            count = appDelegate.mixes.count
         }
         return count
-    }
-    
-    func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
-        if(tableView == mixTableView){
-            let inputs: [UAItem] = getInputs()
-            
-            return inputs[row]
-        }else {
-            return ["Inputs"][row]
-        }
     }
     
 }

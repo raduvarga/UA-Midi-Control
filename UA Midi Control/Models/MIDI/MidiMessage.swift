@@ -89,7 +89,7 @@ class MidiMessage: NSObject {
         getPrintStr()
     }
     
-    func getPrintStr (){
+    func getPrintStr () -> String{
         if(!isEmpty()){
             var messageType:String = ""
             if (isCcMessage()){
@@ -99,6 +99,7 @@ class MidiMessage: NSObject {
             
             printStr =  String(format: "%d %@ %d", midiChannel, messageType, nr)
         }
+        return printStr
     }
     
     func isEmpty() -> Bool{
