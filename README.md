@@ -12,6 +12,8 @@ It's an App that let's you Midi Map the volumes of your Universal Audio interfac
 
 There is no special permissions required to connect this app to the UA Mixer Engine, it will just work if they are opened on the same machine.
 
+Currently only supports CC messages.
+
 ## Why did you do it?
 
 Because:
