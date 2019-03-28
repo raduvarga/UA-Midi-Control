@@ -62,6 +62,13 @@ class TCPListener: TCPClient{
         return taptered
     }
     
+    func getFloatValue (value:Int) -> Double{
+        var floaty:Double = Double(value)/100
+        floaty = 2/1.27 * floaty
+        floaty = floaty - 1
+        return floaty
+    }
+    
     func getBool (value:Int) -> Bool{
         return value > 0
     }
@@ -77,14 +84,23 @@ class TCPListener: TCPClient{
         case "Pad", "Phase","LowCut","48V":
             sendBoolPreampMessage(devId: mapping.deviceId, inputId: mapping.inputId,
                                   property: mapping.mix, value: value)
+        case "Solo", "Mute":
+            sendBoolMessage(devId: mapping.deviceId, inputId: mapping.inputId,
+                                  property: mapping.mix, value: value)
         case "Send 0", "Send 1", "Send 2", "Send 3":
             sendGainSendMessage(devId: mapping.deviceId, inputId: mapping.inputId,
                                 sendId: String(mapping.mix.last!), value: value)
+        case "Pan":
+            sendFloatMessage(devId: mapping.deviceId, inputId: mapping.inputId, property: mapping.mix,
+                                value: value)
         default:
             return
         }
     }
     
+    func sendBoolMessage(devId: String, inputId: String, property: String, value: Int){
+        sendMessage(msg: "set /devices/" + devId + "/inputs/" + inputId + "/" + property + "/value " + String(getBool(value: value)))
+    }
     func sendBoolPreampMessage(devId: String, inputId: String, property: String, value: Int){
         sendMessage(msg: "set /devices/" + devId + "/inputs/" + inputId + "/preamps/0/" + property + "/value " + String(getBool(value: value)))
     }
@@ -99,6 +115,10 @@ class TCPListener: TCPClient{
     func sendVolumeMessage(devId: String, inputId: String, value: Int){
         sendMessage(msg: "set /devices/" + devId + "/inputs/" + inputId + "/FaderLevelTapered/value/ " +
             String(format: "%.6f",  getTaperedLevel(value: value)))
+    }
+    func sendFloatMessage(devId: String, inputId: String, property: String, value: Int){
+        sendMessage(msg: "set /devices/" + devId + "/inputs/" + inputId + "/" + property + "/value/ " +
+            String(format: "%.6f",  getFloatValue(value: value)))
     }
     func sendGetDevices(){
         sendMessage(msg: "get /devices")

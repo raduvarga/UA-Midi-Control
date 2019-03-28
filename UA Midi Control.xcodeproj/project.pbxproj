@@ -21,10 +21,7 @@
 		17E120A120F1140A00700377 /* TCPListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E120A020F1140A00700377 /* TCPListener.swift */; };
 		17E120A720F1680000700377 /* MidiListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E120A620F1680000700377 /* MidiListener.swift */; };
 		2A5EE9D4336D5DC5657D9828 /* Pods_UA_Midi_ControlTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2117CE12974B2F9072703EE7 /* Pods_UA_Midi_ControlTests.framework */; };
-		4C8676735880FEB678D53FBA /* Pods_Focusrite_Midi_Control.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D44987C2326F587AE8A993E /* Pods_Focusrite_Midi_Control.framework */; };
 		7F5A254E5ECE5A3F92DF1475 /* Pods_UA_Midi_Control.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B683AAB98255F52ED81C0E41 /* Pods_UA_Midi_Control.framework */; };
-		CA304CDBE0CF854C2CD86D93 /* Pods_Focusrite_Midi_ControlTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD72703E25B0D4032124AAE /* Pods_Focusrite_Midi_ControlTests.framework */; };
-		F0F249BD6863DE61DF48E4C4 /* Pods_Focusrite_Midi_ControlUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F68C53C4C1A4FD83300A66E /* Pods_Focusrite_Midi_ControlUITests.framework */; };
 		FC85B1A8E54852010ACABCAB /* Pods_UA_Midi_ControlUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE2497E8638EBAD52B97F7C6 /* Pods_UA_Midi_ControlUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,7 +43,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02A38C49C0790A5DFE1346A3 /* Pods-Focusrite Midi ControlUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Focusrite Midi ControlUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Focusrite Midi ControlUITests/Pods-Focusrite Midi ControlUITests.release.xcconfig"; sourceTree = "<group>"; };
 		05CBD5424B2C75D467CB5503 /* Pods-UA Midi ControlTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UA Midi ControlTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UA Midi ControlTests/Pods-UA Midi ControlTests.debug.xcconfig"; sourceTree = "<group>"; };
 		172ED9D020F27464000E7497 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
 		172ED9E720F2EC8F000E7497 /* MidiMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiMessage.swift; sourceTree = "<group>"; };
@@ -66,19 +62,11 @@
 		17AA65062194B7DF004D5D44 /* UAMapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UAMapping.swift; sourceTree = "<group>"; };
 		17E120A020F1140A00700377 /* TCPListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCPListener.swift; sourceTree = "<group>"; };
 		17E120A620F1680000700377 /* MidiListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiListener.swift; sourceTree = "<group>"; };
-		1F68C53C4C1A4FD83300A66E /* Pods_Focusrite_Midi_ControlUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Focusrite_Midi_ControlUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2117CE12974B2F9072703EE7 /* Pods_UA_Midi_ControlTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UA_Midi_ControlTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C99045A0E4D2F78130B7795 /* Pods-UA Midi Control.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UA Midi Control.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UA Midi Control/Pods-UA Midi Control.debug.xcconfig"; sourceTree = "<group>"; };
-		473891FBF3AF1F20EF23BD2A /* Pods-Focusrite Midi ControlUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Focusrite Midi ControlUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Focusrite Midi ControlUITests/Pods-Focusrite Midi ControlUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		4D44987C2326F587AE8A993E /* Pods_Focusrite_Midi_Control.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Focusrite_Midi_Control.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		795B034CF5B3391B690AE692 /* Pods-Focusrite Midi Control.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Focusrite Midi Control.release.xcconfig"; path = "Pods/Target Support Files/Pods-Focusrite Midi Control/Pods-Focusrite Midi Control.release.xcconfig"; sourceTree = "<group>"; };
-		7D205D2B031CBC29DE3D10BD /* Pods-Focusrite Midi ControlTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Focusrite Midi ControlTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Focusrite Midi ControlTests/Pods-Focusrite Midi ControlTests.debug.xcconfig"; sourceTree = "<group>"; };
-		7FD72703E25B0D4032124AAE /* Pods_Focusrite_Midi_ControlTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Focusrite_Midi_ControlTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		829F5688A81EC23163AE78B7 /* Pods-UA Midi ControlTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UA Midi ControlTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UA Midi ControlTests/Pods-UA Midi ControlTests.release.xcconfig"; sourceTree = "<group>"; };
 		830D2BCA39E77F6E19072BE1 /* Pods-UA Midi ControlUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UA Midi ControlUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UA Midi ControlUITests/Pods-UA Midi ControlUITests.release.xcconfig"; sourceTree = "<group>"; };
-		87D163D2553D153D9BF8F696 /* Pods-Focusrite Midi ControlTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Focusrite Midi ControlTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Focusrite Midi ControlTests/Pods-Focusrite Midi ControlTests.release.xcconfig"; sourceTree = "<group>"; };
 		B683AAB98255F52ED81C0E41 /* Pods_UA_Midi_Control.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UA_Midi_Control.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC0D0F707D9DE73FF9D5184B /* Pods-Focusrite Midi Control.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Focusrite Midi Control.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Focusrite Midi Control/Pods-Focusrite Midi Control.debug.xcconfig"; sourceTree = "<group>"; };
 		BE2497E8638EBAD52B97F7C6 /* Pods_UA_Midi_ControlUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UA_Midi_ControlUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9FF8479142667BAE0E12F6 /* Pods-UA Midi ControlUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UA Midi ControlUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UA Midi ControlUITests/Pods-UA Midi ControlUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D1DF4E2E4855251F23D9D8D9 /* Pods-UA Midi Control.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UA Midi Control.release.xcconfig"; path = "Pods/Target Support Files/Pods-UA Midi Control/Pods-UA Midi Control.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,7 +77,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C8676735880FEB678D53FBA /* Pods_Focusrite_Midi_Control.framework in Frameworks */,
 				7F5A254E5ECE5A3F92DF1475 /* Pods_UA_Midi_Control.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,7 +85,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA304CDBE0CF854C2CD86D93 /* Pods_Focusrite_Midi_ControlTests.framework in Frameworks */,
 				2A5EE9D4336D5DC5657D9828 /* Pods_UA_Midi_ControlTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,7 +93,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0F249BD6863DE61DF48E4C4 /* Pods_Focusrite_Midi_ControlUITests.framework in Frameworks */,
 				FC85B1A8E54852010ACABCAB /* Pods_UA_Midi_ControlUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,9 +208,6 @@
 		5CF844C6230477E864462276 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4D44987C2326F587AE8A993E /* Pods_Focusrite_Midi_Control.framework */,
-				7FD72703E25B0D4032124AAE /* Pods_Focusrite_Midi_ControlTests.framework */,
-				1F68C53C4C1A4FD83300A66E /* Pods_Focusrite_Midi_ControlUITests.framework */,
 				B683AAB98255F52ED81C0E41 /* Pods_UA_Midi_Control.framework */,
 				2117CE12974B2F9072703EE7 /* Pods_UA_Midi_ControlTests.framework */,
 				BE2497E8638EBAD52B97F7C6 /* Pods_UA_Midi_ControlUITests.framework */,
@@ -236,12 +218,6 @@
 		935DA996967262752DEA8307 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BC0D0F707D9DE73FF9D5184B /* Pods-Focusrite Midi Control.debug.xcconfig */,
-				795B034CF5B3391B690AE692 /* Pods-Focusrite Midi Control.release.xcconfig */,
-				7D205D2B031CBC29DE3D10BD /* Pods-Focusrite Midi ControlTests.debug.xcconfig */,
-				87D163D2553D153D9BF8F696 /* Pods-Focusrite Midi ControlTests.release.xcconfig */,
-				473891FBF3AF1F20EF23BD2A /* Pods-Focusrite Midi ControlUITests.debug.xcconfig */,
-				02A38C49C0790A5DFE1346A3 /* Pods-Focusrite Midi ControlUITests.release.xcconfig */,
 				3C99045A0E4D2F78130B7795 /* Pods-UA Midi Control.debug.xcconfig */,
 				D1DF4E2E4855251F23D9D8D9 /* Pods-UA Midi Control.release.xcconfig */,
 				05CBD5424B2C75D467CB5503 /* Pods-UA Midi ControlTests.debug.xcconfig */,

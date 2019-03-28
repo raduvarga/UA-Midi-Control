@@ -22,7 +22,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     // ua stuff
     var uaDevices: [String : UADevice] = [:]
     var selectedUADevice: UADevice?
-    var mixes: [String] = ["Inputs", "Gain", "Pad", "Phase", "LowCut", "48V", "Send 0", "Send 1", "Send 2", "Send 3"]
+    var mixes: [String] = ["Inputs", "Gain", "48V", "LowCut", "Phase", "Pad", "Pan", "Solo", "Mute", "Send 0", "Send 1", "Send 2", "Send 3"]
     var selectedMix: String = "Inputs"
     
     // various vars
