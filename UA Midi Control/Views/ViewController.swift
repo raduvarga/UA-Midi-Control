@@ -160,7 +160,7 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
     
     func getValues() -> [UAInput]{
         switch appDelegate.selectedMix {
-        case "Inputs", "Send 0", "Send 1", "Send 2", "Send 3":
+        case "Inputs", "Send 0", "Send 1", "Send 2", "Send 3", "Send 4", "Send 5":
             return getInputs()
         case "Gain", "Pad", "Phase", "LowCut", "48V":
             return getPreamps()

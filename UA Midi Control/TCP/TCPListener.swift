@@ -87,7 +87,7 @@ class TCPListener: TCPClient{
         case "Solo", "Mute":
             sendBoolMessage(devId: mapping.deviceId, inputId: mapping.inputId,
                                   property: mapping.mix, value: value)
-        case "Send 0", "Send 1", "Send 2", "Send 3":
+        case "Send 0", "Send 1", "Send 2", "Send 3", "Send 4", "Send 5":
             sendGainSendMessage(devId: mapping.deviceId, inputId: mapping.inputId,
                                 sendId: String(mapping.mix.last!), value: value)
         case "Pan":
