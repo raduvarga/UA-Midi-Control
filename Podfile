@@ -6,7 +6,7 @@ target 'UA Midi Control' do
   use_frameworks!
 
   # Pods for UA Midi Control
-  pod 'SwiftSocket', '~> 2.0.2'
+  pod 'SwiftSocket'
 
   target 'UA Midi ControlTests' do
     inherit! :search_paths
