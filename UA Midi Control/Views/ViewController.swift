@@ -153,7 +153,7 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
     }
     
     func getPreamps() -> [UAInput]{
-        var preamps: [UAInput] = (appDelegate.selectedUADevice?.inputs.map({$0.value}).filter({$0.hasPreamps()}))!
+        let preamps: [UAInput] = (appDelegate.selectedUADevice?.inputs.map({$0.value}).filter({$0.hasPreamps()}))!
         
         return preamps
     }

@@ -26,7 +26,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var selectedMix: String = "Inputs"
     
     // various vars
-    var midiMaps: [String : UAMapping] = [:]
+    // midiMaps: [UAMapping: midiMessageStr]
+    var midiMaps: [String : String] = [:]
     var isMidiMapping:Bool = false
     var selectedMidiMapId = ""
     
@@ -51,22 +52,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func recreateMidiMaps(){
         let midiMapsPreferences = UserDefaults.standard.dictionary(forKey: "midiMaps")
         if (midiMapsPreferences != nil){
-            let midiMapsEncoded: [String : String] = midiMapsPreferences as! [String : String]
-            
-            for midiMapEncoded in midiMapsEncoded {
-                midiMaps[midiMapEncoded.key] = UAMapping(fromStr: midiMapEncoded.value)
-            }
+            midiMaps = midiMapsPreferences as! [String : String]
         }
     }
     
     func saveMidiMapsToPrefs(){
-        var midiMapsEncoded: [String:String] = [:]
-        
-        for midiMap in midiMaps {
-            midiMapsEncoded[midiMap.key] = midiMap.value.getEncodeStr()
-        }
-        
-        UserDefaults.standard.set(midiMapsEncoded, forKey: "midiMaps")
+        UserDefaults.standard.set(midiMaps, forKey: "midiMaps")
     }
     
     func removeAllMidiMaps(){
@@ -74,32 +65,33 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         saveMidiMapsToPrefs()
     }
     
-    func findMapping(midiMessage: MidiMessage) -> UAMapping?{
-        return midiMaps[midiMessage.asStr]
-    }
-    
-    func findMappingMessage(deviceId:String, inputId:String, mix:String) -> String{
-        for midiMap in midiMaps {
-            let mapping: UAMapping = midiMap.value
-           
-            if(mapping.deviceId == deviceId &&
-                mapping.inputId == inputId &&
-                mapping.mix == mix){
-                
-                let midiMessage: MidiMessage = MidiMessage(midiStr: midiMap.key)
-                return midiMessage.getPrintStr()
+    func findMappings(midiMessage: MidiMessage) -> [UAMapping]{
+        let midiStr = midiMessage.getEncodeStr()
+        var uaMappingList: [UAMapping] = []
+        
+        for (uaMapping, midiMapStr) in midiMaps {
+            
+            if(midiStr == midiMapStr) {
+                let uaMapping = UAMapping(fromStr: uaMapping)
+                uaMappingList.append(uaMapping)
             }
         }
         
-        return ""
+        return uaMappingList
+    }
+    
+    func findMappingMessage(deviceId:String, inputId:String, mix:String) -> String {
+        let uaMapping = UAMapping(deviceId: deviceId, inputId: inputId, mix: mix)
+        
+        return midiMaps[uaMapping.getEncodeStr()] ?? "";
     }
     
     func setMidiMap(deviceId:String, inputId: String, mix:String, midiMessage: MidiMessage){
-        let midiStr = midiMessage.asStr
-        // remove old midi mapping
-        midiMaps.removeValue(forKey: midiStr)
+        let midiStr = midiMessage.getEncodeStr()
+        let uaMapping = UAMapping(deviceId: deviceId, inputId: inputId, mix: mix)
+
         // set new mapping
-        midiMaps[midiStr] = UAMapping(deviceId: deviceId, inputId: inputId, mix: mix)
+        midiMaps[uaMapping.getEncodeStr()] = midiStr
         
         saveMidiMapsToPrefs()
     }
@@ -111,8 +103,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 
                 viewController?.setMidiMapping();
             }else{
-                guard let mapping: UAMapping = findMapping(midiMessage: midiMessage) else {return}
-                tcpClient?.sendUpdateMessage(mapping: mapping, value: midiMessage.value)
+                let uaMappings: [UAMapping] = findMappings(midiMessage: midiMessage)
+                for mapping in uaMappings {
+                    tcpClient?.sendUpdateMessage(mapping: mapping, value: midiMessage.value)
+                }
             }
         }
     }

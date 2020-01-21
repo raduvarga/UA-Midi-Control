@@ -86,10 +86,10 @@ class MidiMessage: NSObject {
         if(!isEmpty()){
             asStr =  String(format: "%d-%d", type, nr)
         }
-        getPrintStr()
+        getEncodeStr()
     }
     
-    func getPrintStr () -> String{
+    func getEncodeStr () -> String{
         if(!isEmpty()){
             var messageType:String = ""
             if (isCcMessage()){
@@ -97,7 +97,7 @@ class MidiMessage: NSObject {
             }
             let midiChannel:Int = getMidiChannel()
             
-            printStr =  String(format: "%d %@ %d", midiChannel, messageType, nr)
+            printStr =  String(format: "%d-%@-%d", midiChannel, messageType, nr)
         }
         return printStr
     }

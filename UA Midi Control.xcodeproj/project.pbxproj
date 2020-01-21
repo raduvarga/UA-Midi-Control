@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		172ED9D120F27464000E7497 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172ED9D020F27464000E7497 /* PreferencesViewController.swift */; };
 		172ED9E820F2EC8F000E7497 /* MidiMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172ED9E720F2EC8F000E7497 /* MidiMessage.swift */; };
+		17517274237A161F00EB443F /* Pods_UA_Midi_Control.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B683AAB98255F52ED81C0E41 /* Pods_UA_Midi_Control.framework */; };
 		175F709B216AA451002E3A36 /* UADevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175F709A216AA451002E3A36 /* UADevice.swift */; };
 		175F709E216AC001002E3A36 /* JsonResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175F709D216AC001002E3A36 /* JsonResponse.swift */; };
 		175F70A2216AD5EB002E3A36 /* UAInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175F70A1216AD5EB002E3A36 /* UAInput.swift */; };
@@ -21,7 +22,6 @@
 		17E120A120F1140A00700377 /* TCPListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E120A020F1140A00700377 /* TCPListener.swift */; };
 		17E120A720F1680000700377 /* MidiListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E120A620F1680000700377 /* MidiListener.swift */; };
 		2A5EE9D4336D5DC5657D9828 /* Pods_UA_Midi_ControlTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2117CE12974B2F9072703EE7 /* Pods_UA_Midi_ControlTests.framework */; };
-		7F5A254E5ECE5A3F92DF1475 /* Pods_UA_Midi_Control.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B683AAB98255F52ED81C0E41 /* Pods_UA_Midi_Control.framework */; };
 		FC85B1A8E54852010ACABCAB /* Pods_UA_Midi_ControlUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE2497E8638EBAD52B97F7C6 /* Pods_UA_Midi_ControlUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F5A254E5ECE5A3F92DF1475 /* Pods_UA_Midi_Control.framework in Frameworks */,
+				17517274237A161F00EB443F /* Pods_UA_Midi_Control.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,10 +611,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "UA Midi Control/UA_Midi_Control.entitlements";
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = 2459T5GMZ7;
 				INFOPLIST_FILE = "UA Midi Control/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -622,7 +622,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MARKETING_VERSION = 1.6;
+				MARKETING_VERSION = 1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "raduvarga.UA-Midi-Control";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -636,10 +636,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "UA Midi Control/UA_Midi_Control.entitlements";
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = 2459T5GMZ7;
 				INFOPLIST_FILE = "UA Midi Control/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -647,7 +647,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MARKETING_VERSION = 1.6;
+				MARKETING_VERSION = 1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "raduvarga.UA-Midi-Control";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

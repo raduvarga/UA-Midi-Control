@@ -140,7 +140,7 @@ class TCPListener: TCPClient{
             do {
                 return try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
             } catch {
-                print(error.localizedDescription)
+                print("error: ", error.localizedDescription)
             }
         }
         return nil
@@ -273,7 +273,7 @@ class TCPListener: TCPClient{
        return (str1.data(using: .utf8) == str2.data(using: .utf8))
     }
     
-    func readMessage(size: Int) -> String{
+    func readMessage(size: Int) -> String {
         guard let data = self.read(size, timeout: 100) else { return "" }
         
         if let response = String(bytes: data, encoding: .utf8) {

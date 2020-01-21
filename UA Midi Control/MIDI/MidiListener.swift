@@ -104,8 +104,8 @@ class MidiListener: NSObject {
                     if(ENABLE_LOGGING){
                         print("processMidiMessage:", midiStr, midiMessage.value)
                     }
-                    appDelegate.onMidiMessageReceived(midiMessage: midiMessage)
                     messageCache.removeValue(forKey: midiStr)
+                    appDelegate.onMidiMessageReceived(midiMessage: midiMessage)
                 }
             }
             usleep(SLEEP_TIME)
