@@ -70,6 +70,10 @@ Walkthrough of the communication steps I did to achieve this app:
 That's basically all I need to comunicate with the UA server to get things done.
 A useful thing to know if you want to expand this app's functionality is that you can access any `property` you see in the responses as a command, i.e. send a `get`, `set` or `subscribe` to any or most of them. e.g. `subscribe /devices/{devId}/inputs/{inputId}/FaderLevelTapered/` - you will constantly be informed when this value changes.
 
+## How to build
+
+To build this project, you must open the ".xcworkspace" file in XCode and run it.
+
 ## Appendix
 
 This is the second time I've written an OSX app, so don't judge the code too hard.
