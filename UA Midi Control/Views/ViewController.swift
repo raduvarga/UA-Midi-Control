@@ -10,9 +10,6 @@ import Cocoa
 
 class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelegate, NSWindowDelegate {
     
-    let backgroundColor : CGColor = CGColor(red: 0.11, green: 0.11, blue: 0.11, alpha: 1.0)
-   
-    @IBOutlet weak var mixLabel: NSTextField!
     @IBOutlet weak var connectedLabel: NSTextField!
     @IBOutlet weak var deviceNameLabel: NSTextField!
     @IBOutlet weak var valuesTableView: NSTableView!
@@ -29,12 +26,6 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
         appDelegate.viewController = self
         let appVersion: String = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as! String
         versionLabel.stringValue = "version: " + appVersion
-    }
-    
-    override func awakeFromNib() {
-        if self.view.layer != nil {
-            self.view.layer?.backgroundColor = backgroundColor
-        }
     }
     
     override func viewDidAppear() {
@@ -89,6 +80,7 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
     }
     func setConnected(connected:Bool){
         DispatchQueue.main.async{
+            self.onlineLabel.stringValue =  connected ?  "Connected" : "Offline"
             self.connectedLabel.textColor = connected ?  NSColor.green: NSColor.red
         }
     }
@@ -123,7 +115,6 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
         }else {
             if (mixesTableView.selectedRow > -1){
                 appDelegate.selectedMix = appDelegate.mixes[mixesTableView.selectedRow]
-                mixLabel.stringValue = appDelegate.selectedMix
             
                 valuesTableView.reloadData()
             }

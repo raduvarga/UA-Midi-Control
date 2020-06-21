@@ -11,12 +11,11 @@ import SwiftSocket
 
 class TCPListener: TCPClient{
     
-    let ENABLE_LOGGING = false
-    
     let RECONNECT_TIME:UInt32 = 3
     let KEEP_ALIVE_TIME:UInt32 = 3
     let SLEEP_TIME:UInt32 = 3
-    let msgSeparator:String = "\u{0}"
+    let USLEEP_TIME:UInt32 = 10 * 1000
+    let MSG_SEPARATOR:Unicode.Scalar = "\u{0}"
     
     let lengthSize = 14;
     var connected:Bool = false
@@ -243,34 +242,40 @@ class TCPListener: TCPClient{
         DispatchQueue.global().async(execute: keepAliveItem!)
     }
     
-    func pollForResponse(){
-        self.readingWorkItem = DispatchWorkItem {
-            if(self.connected){
+    func pollForResponse() {
+        if connected {
+            readingWorkItem = DispatchWorkItem {
+                guard let item = self.readingWorkItem else { return }
                 
-                var dataMsg: String = ""
-                var dataChar: String = ""
+                var strMsg: String = ""
+                var dataChar: [Byte]?
+                var strChar: String?
                 
-                while !self.compareStrAsChar(str1: dataChar, str2: self.msgSeparator) {
-                    dataMsg.append(dataChar)
-                    dataChar = self.readMessage(size: 1);
+                while !item.isCancelled {
+                    dataChar = self.read(1, timeout: -1)
+                    guard (dataChar != nil) else {
+                        usleep(self.USLEEP_TIME)
+                        continue
+                    }
+                    
+                    strChar = String(bytes: dataChar!, encoding: .utf8)
+                    
+                    if (self.isSeparatorCharacter(str: strChar)) {
+                        let finalMsg = strMsg
+                        self.handleMessage(msg: finalMsg)
+                        strMsg = ""
+                    } else {
+                        strMsg += strChar ?? ""
+                    }
                 }
-                
-                if(self.ENABLE_LOGGING){
-                    print("-----------------")
-                    print("receivedMsg:" + dataMsg)
-                }
-                self.handleMessage(msg: dataMsg)
-//                sleep(self.SLEEP_TIME)
-                
-                DispatchQueue.global().async(execute: self.readingWorkItem!)
             }
         }
         
         DispatchQueue.global().async(execute: self.readingWorkItem!)
     }
     
-    func compareStrAsChar (str1: String, str2:String) -> Bool{
-       return (str1.data(using: .utf8) == str2.data(using: .utf8))
+    func isSeparatorCharacter (str: String?) -> Bool{
+        return (str?.unicodeScalars.first == MSG_SEPARATOR)
     }
     
     func readMessage(size: Int) -> String {
@@ -284,15 +289,15 @@ class TCPListener: TCPClient{
     
     
     func sendMessage(msg:String){
-        let tcpMessage = String(format:"%@%@", msg, msgSeparator);
+        let tcpMessage = String(format:"%@%@", msg, String(MSG_SEPARATOR));
         let data:Data = tcpMessage.data(using: .utf8)!
         
         switch self.send(data: data) {
         case .success:
-            if(ENABLE_LOGGING){
+            #if DEBUG
                 print("-----------------")
                 print("Send:" + tcpMessage)
-            }
+            #endif
         case .failure(let error):
             print("failed to send message." + error.localizedDescription)
             setConnected(connected: false)

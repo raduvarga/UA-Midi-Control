@@ -132,9 +132,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func addInput (devId: String, inputId:String, info:JsonResponse<InputProperties, InputChildren>, children: [String]){
-        uaDevices[devId]?.addInput(id: inputId, info:info, children:children)
-        
-        viewController?.onInputRefresh()
+        DispatchQueue.main.async{
+            self.uaDevices[devId]?.addInput(id: inputId, info:info, children:children)
+            self.viewController?.onInputRefresh()
+        }
     }
     
     func onConnectionChange(connected:Bool){

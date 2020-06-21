@@ -13,8 +13,6 @@ import Cocoa
 @objc (UAInput)
 class UAInput: NSObject {
     
-    var appDelegate:AppDelegate = NSApplication.shared.delegate as! AppDelegate
-    
     @objc dynamic var parentId: String = ""
     @objc dynamic var id: String = ""
     @objc dynamic var defaultName: String = ""

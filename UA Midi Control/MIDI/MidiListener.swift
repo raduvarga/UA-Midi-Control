@@ -9,8 +9,6 @@
 import Cocoa
 import CoreMIDI
 
-let ENABLE_LOGGING = false
-
 let appDelegate:AppDelegate  = NSApplication.shared.delegate as! AppDelegate
 
 let CC:Int = 176
@@ -18,7 +16,7 @@ let CCMax:Int = 176 + 11
 let Note:Int = 144
 let NoteMax:Int = 144 + 11
 
-let SLEEP_TIME:UInt32 = 150000
+let SLEEP_TIME:UInt32 = 200 * 1000
 
 var client:MIDIClientRef = MIDIClientRef()
 var inPort:MIDIPortRef = MIDIPortRef()
@@ -36,9 +34,9 @@ func MyMIDIReadProc(pktList: UnsafePointer<MIDIPacketList>,
     let second:Int = Int(packet.data.1)
     let third:Int = Int(packet.data.2)
     
-    if(ENABLE_LOGGING){
+    #if DEBUG
         print("midi:", first,  second, third)
-    }
+    #endif
     
     let midiMessage = MidiMessage(type: first, nr: second, value: third)
     
@@ -99,17 +97,18 @@ class MidiListener: NSObject {
     
     func processMidiMessages(){
         readingWorkItem = DispatchWorkItem {
-            if(messageCache.count > 0){
-                for (midiStr, midiMessage) in messageCache {
-                    if(ENABLE_LOGGING){
-                        print("processMidiMessage:", midiStr, midiMessage.value)
+            while true {
+                if(messageCache.count > 0){
+                    for (midiStr, midiMessage) in messageCache {
+                        #if DEBUG
+                            print("processMidiMessage:", midiStr, midiMessage.value)
+                        #endif
+                        messageCache.removeValue(forKey: midiStr)
+                        appDelegate.onMidiMessageReceived(midiMessage: midiMessage)
                     }
-                    messageCache.removeValue(forKey: midiStr)
-                    appDelegate.onMidiMessageReceived(midiMessage: midiMessage)
                 }
+                usleep(SLEEP_TIME)
             }
-            usleep(SLEEP_TIME)
-            DispatchQueue.global().async(execute: self.readingWorkItem!)
         }
         
         DispatchQueue.global().async(execute: readingWorkItem!)

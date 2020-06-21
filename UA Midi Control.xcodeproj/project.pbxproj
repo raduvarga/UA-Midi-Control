@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		172ED9D120F27464000E7497 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172ED9D020F27464000E7497 /* PreferencesViewController.swift */; };
 		172ED9E820F2EC8F000E7497 /* MidiMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172ED9E720F2EC8F000E7497 /* MidiMessage.swift */; };
+		173F3137249FFBD8007D70C8 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 173F3136249FFBD7007D70C8 /* Icon.icns */; };
 		17517274237A161F00EB443F /* Pods_UA_Midi_Control.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B683AAB98255F52ED81C0E41 /* Pods_UA_Midi_Control.framework */; };
 		175F709B216AA451002E3A36 /* UADevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175F709A216AA451002E3A36 /* UADevice.swift */; };
 		175F709E216AC001002E3A36 /* JsonResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175F709D216AC001002E3A36 /* JsonResponse.swift */; };
 		175F70A2216AD5EB002E3A36 /* UAInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175F70A1216AD5EB002E3A36 /* UAInput.swift */; };
-		175F70AA216BDE75002E3A36 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 175F70A9216BDE75002E3A36 /* Icon.icns */; };
 		177908F620F0EF1500B7C702 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177908F520F0EF1500B7C702 /* AppDelegate.swift */; };
 		177908F820F0EF1500B7C702 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177908F720F0EF1500B7C702 /* ViewController.swift */; };
 		177908FA20F0EF1700B7C702 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 177908F920F0EF1700B7C702 /* Assets.xcassets */; };
@@ -46,10 +46,10 @@
 		05CBD5424B2C75D467CB5503 /* Pods-UA Midi ControlTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UA Midi ControlTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UA Midi ControlTests/Pods-UA Midi ControlTests.debug.xcconfig"; sourceTree = "<group>"; };
 		172ED9D020F27464000E7497 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
 		172ED9E720F2EC8F000E7497 /* MidiMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiMessage.swift; sourceTree = "<group>"; };
+		173F3136249FFBD7007D70C8 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		175F709A216AA451002E3A36 /* UADevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UADevice.swift; sourceTree = "<group>"; };
 		175F709D216AC001002E3A36 /* JsonResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonResponse.swift; sourceTree = "<group>"; };
 		175F70A1216AD5EB002E3A36 /* UAInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UAInput.swift; sourceTree = "<group>"; };
-		175F70A9216BDE75002E3A36 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		177908F220F0EF1500B7C702 /* UA Midi Control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UA Midi Control.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		177908F520F0EF1500B7C702 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		177908F720F0EF1500B7C702 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -198,7 +198,7 @@
 				177908F520F0EF1500B7C702 /* AppDelegate.swift */,
 				177908F920F0EF1700B7C702 /* Assets.xcassets */,
 				177908FB20F0EF1700B7C702 /* Main.storyboard */,
-				175F70A9216BDE75002E3A36 /* Icon.icns */,
+				173F3136249FFBD7007D70C8 /* Icon.icns */,
 				177908FE20F0EF1700B7C702 /* Info.plist */,
 				177908FF20F0EF1700B7C702 /* UA_Midi_Control.entitlements */,
 			);
@@ -336,7 +336,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				175F70AA216BDE75002E3A36 /* Icon.icns in Resources */,
+				173F3137249FFBD8007D70C8 /* Icon.icns in Resources */,
 				177908FA20F0EF1700B7C702 /* Assets.xcassets in Resources */,
 				177908FD20F0EF1700B7C702 /* Main.storyboard in Resources */,
 			);
@@ -614,7 +614,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = 2459T5GMZ7;
 				INFOPLIST_FILE = "UA Midi Control/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -622,7 +622,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MARKETING_VERSION = 1.7;
+				MARKETING_VERSION = 1.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "raduvarga.UA-Midi-Control";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -639,7 +639,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = 2459T5GMZ7;
 				INFOPLIST_FILE = "UA Midi Control/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -647,7 +647,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MARKETING_VERSION = 1.7;
+				MARKETING_VERSION = 1.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "raduvarga.UA-Midi-Control";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
