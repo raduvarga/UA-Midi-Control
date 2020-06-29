@@ -1,6 +1,8 @@
 # Universal Audio (UA) Midi Control
 
-APP DOWNLOAD LINK (Mac OSX): https://github.com/vargaradu/UA-Midi-Control/raw/master/UA%20Midi%20Control.zip
+NEW APP DOWNLOAD LINK: https://www.raduvarga.com/software/ua-midi-control
+
+OLD APP DOWNLOAD LINK: https://github.com/vargaradu/UA-Midi-Control/raw/master/UA%20Midi%20Control.zip
 
 Similar App for Focusrite interfaces: https://github.com/vargaradu/Focusrite-Midi-Control
 
