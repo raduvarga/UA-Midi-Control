@@ -1,6 +1,6 @@
 # Universal Audio (UA) Midi Control
 
-NEW APP DOWNLOAD LINK: https://www.raduvarga.com/software/ua-midi-control
+NEW APP DOWNLOAD LINK: https://fonoflow.com/products/ua-remote-control
 
 OLD APP DOWNLOAD LINK: https://github.com/vargaradu/UA-Midi-Control/raw/master/UA%20Midi%20Control.zip
 
